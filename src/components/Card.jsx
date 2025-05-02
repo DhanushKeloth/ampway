@@ -1,7 +1,8 @@
 import React from "react";
 // import decoration from "../assets/Asset 2.svg";
 import Lottie from "lottie-react";
-import animationData from "../assets/mining.json"
+import animationData from "../assets/PORTFINALANIMATION.json"
+
 export default function Card() {
   return (
     <div className="min-h-full bg-white">
@@ -20,6 +21,12 @@ export default function Card() {
             autoplay={true}
             className="w-[500px] h-[500px]"
           />
+          {/* <img
+            src={port}
+            alt="port"
+            width={500}
+            height={500}
+          /> */}
           </div>
 
           {/* Text content */}
