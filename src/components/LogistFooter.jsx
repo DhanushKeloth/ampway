@@ -2,7 +2,7 @@ import React from 'react';
 
 const LogistFooter = () => {
   return (
-    <footer className="bg-gray-50 py-12 px-6">
+    <footer className="bg-gray-100 py-12 px-6">
       <div className="max-w-6xl mx-auto">
         {/* Logo and Social Icons */}
         <div className="flex justify-between items-center mb-12 border-b pb-6">
@@ -41,7 +41,7 @@ const LogistFooter = () => {
           <div>
             <h2 className="font-bold text-lg mb-4">Address</h2>
             <p className="mb-4"></p>
-            <a href="#" className="flex items-center text-gray-700 hover:text-black">
+            <a href="#" className="flex items-center text-slate-600 hover:text-black">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5 mr-2">
                 <circle cx="12" cy="12" r="10"></circle>
                 <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>

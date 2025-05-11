@@ -3,8 +3,8 @@ import React from 'react'
 function LogistHome() {
   return (
     <>
-    <div className="bg-slate-400 w-3/4 flex items-center justify-center ml-auto mr-auto rounded-3xl ">
-    <header className="w-3/4 px-6 py-4 flex items-center">
+    <div className="w-full flex items-center justify-center ml-auto mr-auto rounded-3xl ">
+    <header className="w-[90%] px-6 py-4 flex items-center">
       {/* Logo on left */}
       <div className="w-1/4">
         <h1 className="text-2xl font-bold">Ampway</h1>

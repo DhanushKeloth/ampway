@@ -9,7 +9,7 @@ const App = () => {
     <div className="min-h-screen bg-white">
       <div className="bg-amber-50 min-h-screen flex  justify-center p-4">
       
-        <nav className="absolute top-0 left-0 right-0 bg-white rounded-full mx-auto w-3/5 py-3 px-6 flex items-center justify-between shadow-md mt-5">
+        <nav className="absolute top-0 left-0 right-0 h-[10%] bg-white rounded-full mx-auto w-3/5 py-3 px-6 flex items-center justify-between shadow-md mt-5">
           <div className="font-bold text-2xl">Ampway</div>
           <div className="flex items-center gap-6">
             <a href="#" className="text-gray-700 hover:text-black">Home</a>
