@@ -84,7 +84,8 @@ const HomeTwo = () => {
       
       <Clients/>
       
-      <Services2/>
+      {/* <Services2/> */}
+      <FeaturesSection/>
 
       {/* Port section - styled like Mimic Design */}
       <div className="w-4/5 mx-auto shadow-md rounded-2xl overflow-hidden mb-10 mt-40 bg-white">
@@ -152,7 +153,7 @@ const HomeTwo = () => {
         <FAQ2/>
       </div>
       {/* <UseCase/> */}
-      <FeaturesSection/>
+      
       <GetConnexted />
       <LogistFooter />
     </div>
