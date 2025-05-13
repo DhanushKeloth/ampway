@@ -52,3 +52,15 @@
 .rotate-y-180 {
   transform: rotateY(180deg);
 }
+
+.sharp-green-separator {
+  width: 100%;
+  height: 8px;
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    #00a878 45%,
+    #00a878 55%,
+    transparent 100%
+  );
+}
