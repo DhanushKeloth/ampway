@@ -11,39 +11,49 @@ import ProfileCard from "./ProfileCard";
 import ProfileFull from "./ProfileFull";
 import WhyChoose from "./WhyChoose";
 import GetConnexted from "./GetConnected";
-import mine from "../assets/imageexc.png"
+import mine from "../assets/imagemine.png";
 import { AiFillThunderbolt } from "react-icons/ai";
+import FAQ from "./FAQ";
+import FAQ2 from "./FAQ2";
+// import StackedCard from "./StackedCard"
+import Clients from "./Clients";
+import homepage from "../assets/home_page (3).svg"
+import Services2 from "./Services2";
+import UseCase from "./UseCase";
+import FeaturesSection from "./FeaturesSection";
 
 const HomeTwo = () => {
   return (
     <div className="min-h-screen bg-[#F1F5F9]">
-      <div className="bg-gray-100 min-h-screen flex justify-center p-4 ">
+      <div className="bg-gray-100 min-h-screen flex justify-center p-3 mb-44">
         {/* Navigation - styled like Mimic Design */}
-        <nav className="fixed bg-opacity-90 backdrop-blur z-50 top-0 left-0 right-0 bg-white mx-auto w-4/5 p-5 flex items-center justify-between shadow-sm mt-5 rounded-full ">
-          <div className="flex items-center">
-            <div className="w-8 h-8  rounded-lg mr-2"><AiFillThunderbolt size={40} color="#33A675"/></div>
-            <div className="font-bold text-2xl">Ampway</div>
+        <nav className="fixed bg-opacity-90 backdrop-blur z-50 top-0 left-0 right-0 bg-white mx-auto w-4/5 p-4 flex items-center justify-between shadow-md mt-3 rounded-full ">
+          <div className="flex gap-2 ">
+            {/* <div className="w-8 h-8  rounded-lg "> */}
+              <AiFillThunderbolt  color="#33A675" className="w-10 h-10 rounded-lg"/>
+            {/* </div> */}
+            <div className="font-bold text-3xl">Ampway</div>
           </div>
           <div className="flex items-center gap-6 font-fontheader font-semibold">
-            <a href="#" className="text-gray-700 hover:text-black">
+            <a href="#" className="text-gray-700 hover:text-black text-lg">
               Home
             </a>
-            <a href="#" className="text-gray-700 hover:text-black">
+            <a href="#" className="text-gray-700 hover:text-black text-lg">
               Services
             </a>
-            <a href="#" className="text-gray-700 hover:text-black">
+            <a href="#" className="text-gray-700 hover:text-black text-lg">
               About
             </a>
-            <button className="bg-[#33A675] text-white rounded-full px-6 py-3 font-medium">
+            <button className="bg-[#33A675] text-white rounded-full px-6 py-3 font-medium text-lg">
               Contact us
             </button>
           </div>
         </nav>
 
         {/* Hero Content - styled like Mimic Design */}
-        <div className="container mx-auto px-4 flex items-center justify-center mt-32">
-          <div className="flex flex-col items-center text-center mb-12">
-            <h2 className="text-5xl md:text-6xl lg:text-8xl leading-tight mb-6 text-gray-900 manrope-font">
+        <div className=" container mx-auto px-4 flex items-center justify-center mt-20 ">
+          <div className=" flex flex-col items-center text-center mb-12 -mt-56">
+            <h2 className=" md:text-3xl lg:text-7xl leading-tight mb-6 text-gray-900 manrope-font">
               <div className="flex flex-col gap-5">
                 <span>Powering Freight</span>
                 <span>Electrification</span>
@@ -51,7 +61,7 @@ const HomeTwo = () => {
             </h2>
 
             {/* Subheading - keeping Ampway text */}
-            <p className="text-lg text-gray-600 mb-8 max-w-2xl w-3/4">
+            <p className="text-xl text-gray-600 mb-3 max-w-2xl w-3/4">
               Ampway provides sustainable medium and heavy-duty transportation,
               driven by renewable power.
             </p>
@@ -59,63 +69,25 @@ const HomeTwo = () => {
             <div className="flex items-center justify-center gap-4">
               <a
                 href="#"
-                className="bg-[#33A675] text-white rounded-full px-6 py-3 font-normal font-fontheader"
+                className="bg-[#33A675]  text-white rounded-full px-6 py-3  font-fontheader text-lg "
               >
                 Explore Services
               </a>
             </div>
           </div>
+            <div className="absolute w-full mx-auto -mt-16  ">
+              <img src={homepage} alt="homepage" />
+            </div>
         </div>
       </div>
       {/* <div className="w-4/5 mx-auto my-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 "> */}
-      <div className="p-10 flex flex-col md:flex-row gap-5 items-center ">
-        {/* Card 1 */}
-        <div className="bg-purple-400 h-[300px] rounded-2xl shadow p-6 text-center hover:shadow-md transition duration-300">
-          <div className="text-4xl mb-4">⚡</div>
-          <h3 className="text-xl font-semibold text-gray-900 mb-2">
-            Zero Emissions Freight
-          </h3>
-          <p className="text-gray-100 text-lg">
-            Reduce your carbon footprint with electric trucks.
-          </p>
-        </div>
-
-        {/* Card 2 */}
-        <div className="bg-blue-400 h-[300px] rounded-2xl shadow p-6 text-center hover:shadow-md transition duration-300">
-          <div className="text-4xl mb-4]">🚛</div>
-          <h3 className="text-xl font-semibold text-gray-900 mb-2">
-            Trucking-as-a-Service
-          </h3>
-          <p className="text-gray-600 text-lg">
-            Flexible fleet solutions without the ownership hassle.
-          </p>
-        </div>
-
-        {/* Card 3 */}
-        <div className="bg-gray-300 h-[300px] rounded-2xl shadow p-6 text-center hover:shadow-md transition duration-300">
-          <div className="text-4xl mb-4">📦</div>
-          <h3 className="text-xl font-semibold text-gray-900 mb-2">
-            Tailored for Corporate Logistics
-          </h3>
-          <p className="text-gray-600 text-lg">
-            Scalable services for enterprise supply chains.
-          </p>
-        </div>
-
-        {/* Card 4 */}
-        <div className="bg-white h-[300px] rounded-2xl shadow p-6 text-center hover:shadow-md transition duration-300">
-          <div className="text-4xl mb-4">🔋</div>
-          <h3 className="text-xl font-semibold text-gray-900 mb-2">
-            Powered by Clean Energy
-          </h3>
-          <p className="text-gray-600 text-lg">
-            Driving sustainability from source to delivery.
-          </p>
-        </div>
-      </div>
+      
+      <Clients/>
+      
+      <Services2/>
 
       {/* Port section - styled like Mimic Design */}
-      <div className="w-4/5 mx-auto shadow-md rounded-2xl overflow-hidden mb-10 mt-10 bg-white">
+      <div className="w-4/5 mx-auto shadow-md rounded-2xl overflow-hidden mb-10 mt-40 bg-white">
         <div className="relative p-8">
           <div className="flex flex-col md:flex-row items-center">
             <div className="md:w-1/2 p-8">
@@ -136,12 +108,12 @@ const HomeTwo = () => {
           </div>
         </div>
       </div>
-      <div className="w-4/5 mx-auto  rounded-2xl overflow-hidden mb-10 mt-10 bg-white  from-neutral-500 to-neutral-900">
+      <div className="w-4/5 mx-auto  rounded-2xl overflow-hidden mb-10 mt-10 bg-[#393838]  from-neutral-700 to-neutral-900">
         <div className="relative p-8">
           <div className="flex md:flex-row items-center justify-around">
-            <p className="text-5xl font-bold ">Mining</p>
-          <img src={mine} width="600px"  className="rounded-2xl "/>
-            </div>
+            <p className="text-5xl font-bold text-yellow-400">Mining</p>
+            <img src={mine} width="600px" className="rounded-2xl " />
+          </div>
         </div>
       </div>
       {/* <div className="bg-gray-200 my-10 flex p-10 gap-5 justify-center  ">
@@ -175,8 +147,13 @@ const HomeTwo = () => {
           />
         </div>
       </div>
-      {/* <WhyChoose/> */}
-      <GetConnexted/>
+      <div className="flex justify-center">
+        {/* <FAQ /> */}
+        <FAQ2/>
+      </div>
+      {/* <UseCase/> */}
+      <FeaturesSection/>
+      <GetConnexted />
       <LogistFooter />
     </div>
   );
