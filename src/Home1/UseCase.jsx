@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react";
 import port from "../assets/WhatsApp Image 2025-05-16 at 23.19.28.jpeg";
 import mine from "../assets/image.png";
 import Lottie from "lottie-react";
-import miningbg from "../assets/MININGBG.json";
+import miningbg from "../assets/MININGBG (1).json";
 import portdha from "../assets/portdha.json"
 export default function SocialMediaMarketing() {
   const useCases = [
@@ -41,34 +41,17 @@ export default function SocialMediaMarketing() {
     },
   ];
 
-  const [activeTab, setActiveTab] = useState("ports");
+  const [activeTab, setActiveTab] = useState("mining");
   const activeUseCase = useCases.find((uc) => uc.id === activeTab);
 
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Header */}
-      <header className="p-6 bg-white shadow-sm">
-        <nav className="max-w-7xl mx-auto flex items-center justify-between">
-          <div className="flex items-center space-x-4">
-            <h1 className="text-2xl font-bold">EcoFleet Logistics</h1>
-          </div>
-          <div className="flex items-center space-x-6">
-            <button className="text-gray-700 hover:text-gray-900">
-              Sign In
-            </button>
-            <button className="bg-black text-white px-6 py-2 rounded-full hover:bg-gray-800 transition">
-              Get Started
-            </button>
-          </div>
-        </nav>
-      </header>
+      
 
       {/* Hero Section */}
       <section className="max-w-7xl mx-auto px-6 py-12">
         <div>
-          <span className="bg-green-600 text-white text-xs font-semibold px-3 py-1 rounded-full">
-            Use cases
-          </span>
+          
 
           <h2 className="text-5xl font-bold mt-6 leading-tight">
             Electrify your logistics

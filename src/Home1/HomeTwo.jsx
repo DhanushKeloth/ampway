@@ -23,7 +23,7 @@ import UseCase from "./UseCase";
 import FeaturesSection from "./FeaturesSection";
 import UseCase2 from "./UseCase2";
 import port from "../assets/WhatsApp Image 2025-05-16 at 23.19.28.jpeg";
-
+import homemain from "../assets/homepage_ampway.svg"
 
 const HomeTwo = () => {
   const [showNavbar, setShowNavbar] = useState(true);
@@ -104,13 +104,14 @@ const HomeTwo = () => {
             </div>
           </div>
           <div className="absolute w-full mx-auto -mt-16">
-            <img src={homepage} alt="homepage" />
+            <img src={homemain} alt="homepage" />
           </div>
         </div>
       </div>
 
       <Clients />
       <FeaturesSection />
+      <UseCase />
       <UseCase2 />
 
       {/* Port section */}
@@ -164,7 +165,7 @@ const HomeTwo = () => {
         <FAQ2 />
       </div>
 
-      <UseCase />
+      
       <GetConnexted />
       <LogistFooter />
     </div>
