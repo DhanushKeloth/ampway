@@ -1,33 +1,48 @@
-import React, { useState } from 'react';
-import { ArrowRight } from 'lucide-react';
-
+import React, { useState } from "react";
+import { ArrowRight } from "lucide-react";
+import port from "../assets/WhatsApp Image 2025-05-16 at 23.19.28.jpeg";
+import mine from "../assets/image.png";
+import Lottie from "lottie-react";
+import miningbg from "../assets/MININGBG.json";
+import portdha from "../assets/portdha.json"
 export default function SocialMediaMarketing() {
-  const [activeTab, setActiveTab] = useState('advertising');
+  const useCases = [
+    
+    {
+      id: "mining",
+      title: "Mining",
+      description:
+        "Enhance safety and efficiency in mining sites with durable, zero-emission electric trucks built for rugged terrain.",
+      image: miningbg,
+      bgColor: "bg-green-50",
+    },
+    {
+      id: "ports",
+      title: "Ports",
+      description:
+        "Optimize cargo handling and reduce emissions with our electric trucks designed for busy port operations.",
+      image: portdha,
+    },
+    {
+      id: "warehouses",
+      title: "Warehouses",
+      description:
+        "Streamline internal logistics and cut operational costs using quiet and eco-friendly electric trucks optimized for warehouse environments.",
+      image: "/api/placeholder/500/600",
+      bgColor: "bg-yellow-50",
+    },
+    {
+      id: "industrial",
+      title: "Industrial Operations",
+      description:
+        "Power your industrial material handling with reliable electric trucks that reduce carbon footprint and improve productivity.",
+      image: "/api/placeholder/500/600",
+      bgColor: "bg-purple-50",
+    },
+  ];
 
-  const useCases = {
-    social: {
-      title: 'Social media',
-      description:
-        'Create thumb-stopping content that drives engagement across all social platforms.',
-      image: '/api/placeholder/500/600',
-      bgColor: 'bg-blue-50',
-    },
-    advertising: {
-      title: 'Advertising',
-      description:
-        'Scale production for high-volume campaigns across channels, formats, and languages, delivering dynamic ads that convert.',
-      image: '/api/placeholder/500/600',
-      bgColor: 'bg-purple-50',
-    },
-    prototyping: {
-      title: 'Prototyping',
-      description:
-        'Quickly iterate on ideas and test concepts with interactive prototypes.',
-      overlayText: 'SPRING\nREFRESH',
-      image: '/api/placeholder/500/600',
-      bgColor: 'bg-pink-50',
-    },
-  };
+  const [activeTab, setActiveTab] = useState("ports");
+  const activeUseCase = useCases.find((uc) => uc.id === activeTab);
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -35,10 +50,12 @@ export default function SocialMediaMarketing() {
       <header className="p-6 bg-white shadow-sm">
         <nav className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="flex items-center space-x-4">
-            <h1 className="text-2xl font-bold">MotionBrand</h1>
+            <h1 className="text-2xl font-bold">EcoFleet Logistics</h1>
           </div>
           <div className="flex items-center space-x-6">
-            <button className="text-gray-700 hover:text-gray-900">Sign In</button>
+            <button className="text-gray-700 hover:text-gray-900">
+              Sign In
+            </button>
             <button className="bg-black text-white px-6 py-2 rounded-full hover:bg-gray-800 transition">
               Get Started
             </button>
@@ -49,103 +66,96 @@ export default function SocialMediaMarketing() {
       {/* Hero Section */}
       <section className="max-w-7xl mx-auto px-6 py-12">
         <div>
-          <span className="bg-purple-500 text-white text-xs font-semibold px-3 py-1 rounded-full">
+          <span className="bg-green-600 text-white text-xs font-semibold px-3 py-1 rounded-full">
             Use cases
           </span>
 
           <h2 className="text-5xl font-bold mt-6 leading-tight">
-            Animate for social media, ads,
+            Electrify your logistics
             <br />
-            marketing, brand, product,
+            with zero-emission trucks
             <br />
-            and more
+            for ports, mining, warehouses,
+            <br />
+            and industrial sites
           </h2>
 
           <p className="text-gray-600 mt-6 text-lg leading-relaxed max-w-xl">
-            The best brands use motion across all platforms
-            <br />
-            to capture attention, tell powerful stories, and
-            <br />
-            drive more engagement.
+            Drive sustainability and efficiency across your operations with our
+            cutting-edge electric trucks engineered for heavy-duty logistics.
           </p>
 
           <button className="bg-black text-white px-6 py-3 rounded-full mt-8 flex items-center space-x-2 hover:bg-gray-800 transition">
-            <span>Read customer stories</span>
+            <span>Learn more about our fleet</span>
           </button>
         </div>
       </section>
 
       {/* Interactive Use Cases Section */}
-      <section className="max-w-7xl mx-auto px-6 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-          {/* Left side - Collapsible buttons */}
-          <div className="space-y-4">
-            {Object.entries(useCases).map(([key, useCase]) => (
-              <details
-                key={key}
-                open={activeTab === key}
-                onClick={() => setActiveTab(key)}
-                className={`bg-white rounded-2xl p-6 shadow transition-all cursor-pointer ${
-                  activeTab === key ? 'border-2 border-gray-200' : 'hover:shadow-md'
+      <section className="max-w-full mx-auto px-6 py-12 ">
+        <div className="flex  items-center  gap-12">
+          {/* Left side - Tabs */}
+          <div className="space-y-4 w-1/2">
+            {useCases.map(({ id, title, description }) => (
+              <div
+                key={id}
+                onClick={() => setActiveTab(id)}
+                className={`bg-white rounded-2xl p-6 shadow transition-all cursor-pointer select-none ${
+                  activeTab === id
+                    ? "border-2 border-gray-200"
+                    : "hover:shadow-md"
                 }`}
               >
-                <summary className="flex items-center justify-between text-gray-700 text-lg font-medium list-none">
-                  {useCase.title}
+                <div className="flex items-center justify-between text-gray-700 text-lg font-medium">
+                  {title}
                   <ArrowRight
                     className={`ml-2 transform transition-transform duration-200 ${
-                      activeTab === key ? 'rotate-90' : ''
+                      activeTab === id ? "rotate-90" : ""
                     }`}
                     size={18}
                   />
-                </summary>
-                <div className="mt-4 text-gray-600">{useCase.description}</div>
-              </details>
+                </div>
+                {activeTab === id && (
+                  <div className="mt-4 text-gray-600">{description}</div>
+                )}
+              </div>
             ))}
           </div>
 
           {/* Right side - Image and background */}
-          <div className="relative">
+          {/* Right side - Image and background */}
+          <div className="relative w-11/12 ">
             <div
-              className={`${useCases[activeTab].bgColor} rounded-3xl p-8 h-full min-h-96 flex items-center justify-center relative overflow-hidden transition-all duration-300`}
+              className={`${activeUseCase.bgColor}  rounded-3xl flex items-center justify-center relative  transition-all duration-300`}
             >
-              {activeTab === 'prototyping' && useCases[activeTab].overlayText && (
-                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                  <h3 className="text-6xl font-bold text-gray-900 text-center whitespace-pre-line">
-                    {useCases[activeTab].overlayText}
-                  </h3>
+              {/* <img
+                src={activeUseCase.image}
+                alt={`${activeUseCase.title} example`}
+                className="w-full object-cover rounded-2xl"
+              /> */}
+              {activeUseCase.image && (
+                <div className="w-full h-full flex items-center justify-center">
+                  <Lottie
+                    animationData={activeUseCase.image}
+                    className="w-full object-cover rounded-2xl overflow-hidden"
+                  />
                 </div>
               )}
-              <img
-                src={useCases[activeTab].image}
-                alt={`${useCases[activeTab].title} example`}
-                className={`w-full h-full object-cover rounded-2xl ${
-                  activeTab === 'prototyping' ? 'opacity-30' : ''
-                }`}
-              />
-              {activeTab === 'social' && (
-                <div className="absolute bottom-4 left-4 bg-yellow-400 p-3 rounded">
-                  <div className="w-8 h-8 bg-yellow-600 rounded"></div>
-                </div>
-              )}
+              
+              {/* <Lottie
+                animationData={activeUseCase.image}
+                className="w-full object-cover rounded-2xl overflow-hidden"
+              /> */}
             </div>
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="bg-gray-900 text-white py-20 mt-20">
-        <div className="max-w-7xl mx-auto px-6 text-center">
-          <h2 className="text-4xl font-bold mb-6">
-            Ready to transform your creative workflow?
-          </h2>
-          <p className="text-xl text-gray-300 mb-8">
-            Join thousands of brands creating engaging motion content.
-          </p>
-          <button className="bg-white text-black px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition">
-            Start creating for free
-          </button>
-        </div>
+      <section className="bg-gray-900 text-white py-20 my-20">
+        
       </section>
+      
     </div>
   );
 }

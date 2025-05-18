@@ -4,40 +4,46 @@ import { ChevronDown, ChevronUp } from "lucide-react";
 // FAQ content stored in an array of objects
 const faqData = [
   {
-    id: "item1",
-    question: "What is Pixel Bloom?",
+    id: 0,
+    question: "What services does Ampway Logistics provide?",
     answer:
-      "Pixel Bloom is a comprehensive AI platform designed to enhance business operations through intelligent automation and data analysis.",
+      "We offer end-to-end logistics solutions including freight transportation, warehousing, last-mile delivery, and real-time shipment tracking.",
   },
   {
-    id: "item2",
-    question: "How can I benefit from Pixel Bloom's services?",
+    id: 1,
+    question: "How can I track my shipment?",
     answer:
-      "Our AI models can enhance your business operations by automating tasks, improving accuracy, and providing data-driven insights.",
+      "You can track your shipment using the tracking ID provided in your confirmation email via our Track Shipment page.",
   },
   {
-    id: "item3",
-    question: "How do I get started with Pixel Bloom?",
+    id: 2,
+    question: "Does Ampway support international shipping?",
     answer:
-      "Getting started is simple. Create an account, select the services that match your needs, and our team will guide you through the implementation process.",
+      "Yes, we offer both domestic and international freight solutions. Reach out to our team for documentation and customs support.",
   },
   {
-    id: "item4",
-    question: "Are your AI models customizable?",
+    id: 3,
+    question: "What types of goods can I ship with Ampway?",
     answer:
-      "Yes, all our AI models can be customized to fit your specific business requirements and integrate with your existing systems and workflows.",
+      "We handle general cargo, perishables, industrial equipment, e-commerce goods, and more. Hazardous materials require special handling and approval.",
   },
   {
-    id: "item5",
-    question: "How is data privacy handled?",
+    id: 4,
+    question: "Is Ampway an eco-friendly logistics provider?",
     answer:
-      "We prioritize data security and privacy. All data is encrypted, stored securely, and processed in compliance with global privacy regulations. We never share your data with third parties without explicit consent.",
+      "Absolutely. Our fleet includes electric trucks, and we use route optimization and green warehousing practices to reduce our carbon footprint.",
   },
+  {
+    id: 5,
+    question: "Can I schedule recurring shipments for my business?",
+    answer:
+      "Yes. Our B2B logistics plans allow you to automate and manage recurring shipments easily through your dashboard.",
+  },
+  
 ];
-
 export default function FAQ() {
   // Initialize all items as closed
-  const [openItems, setOpenItems] = useState({ item2: true });
+  const [openItems, setOpenItems] = useState({  });
 
   const toggleItem = (id) => {
     setOpenItems((prev) => ({
@@ -47,7 +53,7 @@ export default function FAQ() {
   };
 
   return (
-    <div className="bg-white text-gray-800 py-12 px-4 w-full my-10 h-screen">
+    <div className="bg-white text-gray-800 py-12 px-4 w-full my-10 h-screen overflow-auto">
       {/* Header Section */}
       <div className="flex justify-center items-center h-full">
         <div className="ml-auto mr-auto">
@@ -60,7 +66,7 @@ export default function FAQ() {
         </div>
 
         {/* FAQ Items */}
-        <div className="mt-12 space-y-4 w-1/2 ml-auto mr-auto h-full flex flex-col justify-center">
+        <div className="mt-12 space-y-4 w-1/2 ml-auto mr-auto h-full flex flex-col justify-center ">
           {faqData.map((faq) => (
             <div
               key={faq.id}

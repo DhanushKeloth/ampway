@@ -48,7 +48,7 @@ const Clients = () => {
         <div className="flex items-center justify-center mb-14 ">
           <div className="border-t border-gray-300 flex-grow mx-4"></div>
           <p className="text-gray-700 text-sm md:text-base font-medium">
-            Over <span className="font-bold">20,000 creative teams</span> use <span className="font-bold">Jitter</span> to create stunning animations online.
+           We collaborate with top industry leaders to deliver results-driven solutions
           </p>
           <div className="border-t border-gray-300 flex-grow mx-4"></div>
         </div>

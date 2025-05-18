@@ -81,11 +81,6 @@ const App = () => {
             </h3>
           </div>
           <div>
-            {/* <img
-              className="w-[90%] ml-auto h-full mt-auto"
-              src={port}
-              alt="port"
-            /> */}
             <Lottie
             animationData={portdha}
             loop={true}

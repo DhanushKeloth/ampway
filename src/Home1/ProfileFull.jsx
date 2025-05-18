@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Aditya_D from "../assets/Aditya_D.png";
-import { Twitter, Facebook, Instagram } from 'lucide-react';
+import { Twitter, Facebook, Instagram, Linkedin } from 'lucide-react';
+import { BsTwitter,BsInstagram,BsLinkedin } from 'react-icons/bs';
 import  '../index.css';
 import bg from "../assets/image.png"
 export default function ProfileFull({profile,name,title}) {
@@ -13,8 +14,9 @@ export default function ProfileFull({profile,name,title}) {
   return (
     
       <div
-        className="relative w-80 h-96 perspective"
-        onClick={handleCardClick}
+        className="relative w-80 h-96 perspective "
+        onMouseEnter={handleCardClick}
+        onMouseLeave={handleCardClick}
       >
         <div
           className={`transition-transform duration-700 ease-in-out w-full h-full relative transform-style preserve-3d ${isFlipped ? "rotate-y-180" : ""
@@ -66,14 +68,14 @@ export default function ProfileFull({profile,name,title}) {
               <h2 className="text-2xl font-bold text-gray-900">{name}</h2>
               <p className="text-gray-600 font-medium mt-1">{title}</p>
               <div className="flex justify-center gap-4 mt-6">
-                <a href="#" className="text-[#33A675] hover:text-violet-800">
-                  <Instagram size={20} />
+                <a href="#" className="text-[#33A675] hover:text-[#1a7b56]">
+                  <BsInstagram size={20} />
                 </a>
-                <a href="#" className="text-[#33A675] hover:text-violet-800">
-                  <Twitter size={20} />
+                <a href="#" className="text-[#33A675] hover:text-[#1a7b56]">
+                  <BsTwitter size={20} />
                 </a>
-                <a href="#" className="text-[#33A675] hover:text-violet-800">
-                  <Facebook size={20} />
+                <a href="#" className="text-[#33A675] hover:text-[#1a7b56]">
+                  <BsLinkedin size={20} />
                 </a>
               </div>
             </div>
