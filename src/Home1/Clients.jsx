@@ -37,32 +37,34 @@ const logos = [
     name: "X",
     logo: "https://cdn.iconscout.com/icon/free/png-512/free-twitter-x-logo-icon-download-in-svg-png-gif-file-formats--social-media-logos-pack-icons-8589161.png?f=webp&w=256",
   },
- 
 ];
 
 const Clients = () => {
   return (
-    <div className="w-full  py-12">
+    <div className="w-full py-12 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 text-center">
         {/* Heading with lines */}
-        <div className="flex items-center justify-center mb-14 ">
+        <div className="flex items-center justify-center mb-14">
           <div className="border-t border-gray-300 flex-grow mx-4"></div>
           <p className="text-gray-700 text-sm md:text-base font-medium">
-           We collaborate with top industry leaders to deliver results-driven solutions
+            We collaborate with top industry leaders to deliver results-driven solutions
           </p>
           <div className="border-t border-gray-300 flex-grow mx-4"></div>
         </div>
 
-        {/* Logos */}
-        <div className="flex flex-wrap items-center justify-center gap-20">
-          {logos.map((logo) => (
-            <img
-              key={logo.name}
-              src={logo.logo}
-              alt={logo.name}
-              className="h-14 object-contain grayscale hover:grayscale-0 transition duration-300"
-            />
-          ))}
+        {/* Marquee */}
+        <div className="relative w-full overflow-hidden">
+          <div className="animate-marquee-reverse whitespace-nowrap flex items-center gap-16">
+
+            {[...logos, ...logos].map((logo, index) => (
+              <img
+                key={`${logo.name}-${index}`}
+                src={logo.logo}
+                alt={logo.name}
+                className="h-14 object-contain grayscale hover:grayscale-0 transition duration-300"
+              />
+            ))}
+          </div>
         </div>
       </div>
     </div>
