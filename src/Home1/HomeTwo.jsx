@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import LogistFooter from "../components/LogistFooter";
 import Lottie from "lottie-react";
 // import animationData from "./assets/PORTFINALANIMATION.json"
-import portdha from "../assets/portdha.json";
+
 import Button from "./Button";
 import MoveText from "./MoveText";
 import Aditya_D from "../assets/Aditya_D.png";
@@ -17,7 +17,7 @@ import FAQ from "./FAQ";
 import FAQ2 from "./FAQ2";
 // import StackedCard from "./StackedCard"
 import Clients from "./Clients";
-import homepage from "../assets/home_page (3).svg";
+
 import Services2 from "./Services2";
 import UseCase from "./UseCase";
 import FeaturesSection from "./FeaturesSection";
@@ -179,7 +179,7 @@ const HomeTwo = () => {
       </div>
 
       {/* Team Section */}
-      <div className="bg-gray-50 flex flex-col items-center justify-center gap-10 p-10 h-screen w-4/5 ml-auto mr-auto rounded-[3rem]">
+      {/* <div className="bg-gray-50 flex flex-col items-center justify-center gap-10 p-10 h-screen w-4/5 ml-auto mr-auto rounded-[3rem]">
         <p className="text-[4rem] font-bold">Meet Our Team</p>
         <div className="flex gap-10">
           <ProfileFull
@@ -196,9 +196,10 @@ const HomeTwo = () => {
       </div>
 
       {/* FAQs */}
+      {/*
       <div className="flex justify-center">
         <FAQ2 />
-      </div>
+      </div> */}
 
       <GetConnexted />
       <LogistFooter />
