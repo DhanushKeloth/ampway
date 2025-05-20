@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
 
-// FAQ content stored in an array of objects
 const faqData = [
   {
     id: 0,
@@ -39,11 +38,10 @@ const faqData = [
     answer:
       "Yes. Our B2B logistics plans allow you to automate and manage recurring shipments easily through your dashboard.",
   },
-  
 ];
+
 export default function FAQ() {
-  // Initialize all items as closed
-  const [openItems, setOpenItems] = useState({  });
+  const [openItems, setOpenItems] = useState({});
 
   const toggleItem = (id) => {
     setOpenItems((prev) => ({
@@ -53,10 +51,49 @@ export default function FAQ() {
   };
 
   return (
-    <div className="bg-white text-gray-800 py-12 px-4 w-full my-10 h-screen overflow-auto">
-      {/* Header Section */}
-      <div className="flex justify-center items-center h-full">
-        <div className="ml-auto mr-auto">
+    <div className="bg-white text-gray-800 px-4 py-12 w-full min-h-screen">
+      {/* Mobile View */}
+      <div className="md:hidden max-w-md mx-auto">
+        <div className="text-center mb-8">
+          <h1 className="text-3xl font-bold mb-1">Frequently Asked</h1>
+          <h1 className="text-3xl font-bold text-green-600 mb-4">Questions</h1>
+          <p className="text-gray-600 text-base mb-5">Still have a question in mind?</p>
+          <button className="bg-black text-white rounded-full px-5 py-2 text-base font-medium">
+            Contact us
+          </button>
+        </div>
+
+        <div className="mt-8 space-y-3">
+          {faqData.map((faq) => (
+            <div
+              key={faq.id}
+              className="border border-gray-200 rounded-2xl transition-all"
+            >
+              <button
+                className="w-full p-3 text-left flex justify-between items-center"
+                onClick={() => toggleItem(faq.id)}
+              >
+                <span className="font-medium text-base pr-2">{faq.question}</span>
+                {openItems[faq.id] ? (
+                  <ChevronUp size={18} />
+                ) : (
+                  <ChevronDown size={18} />
+                )}
+              </button>
+              {openItems[faq.id] && (
+                <div className="px-3 pb-3 text-gray-600 text-sm">
+                  {faq.answer}
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Desktop View */}
+      <div className="hidden md:flex justify-between items-center gap-10 h-full">
+        {/* Left Section */}
+        <div className="w-1/2 flex flex-col justify-center items-baseline ml-20">
           <h1 className="text-5xl font-bold mb-1">Frequently Asked</h1>
           <h1 className="text-5xl font-bold text-[#33A675] mb-6">Questions</h1>
           <p className="text-gray-600 text-lg mb-6">Still have a question in mind?</p>
@@ -65,8 +102,8 @@ export default function FAQ() {
           </button>
         </div>
 
-        {/* FAQ Items */}
-        <div className="mt-12 space-y-4 w-1/2 ml-auto mr-auto h-full flex flex-col justify-center ">
+        {/* Right Section (FAQs) */}
+        <div className="w-1/2 space-y-4 mr-20">
           {faqData.map((faq) => (
             <div
               key={faq.id}
@@ -84,7 +121,7 @@ export default function FAQ() {
                 )}
               </button>
               {openItems[faq.id] && (
-                <div className="p-4 pt-0 text-gray-600 ">
+                <div className="p-4 pt-0 text-gray-600">
                   {faq.answer}
                 </div>
               )}
@@ -95,4 +132,3 @@ export default function FAQ() {
     </div>
   );
 }
-    

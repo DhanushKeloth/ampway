@@ -4,10 +4,9 @@ import port from "../assets/WhatsApp Image 2025-05-16 at 23.19.28.jpeg";
 import mine from "../assets/image.png";
 import Lottie from "lottie-react";
 import miningbg from "../assets/MININGBG (1).json";
-import portdha from "../assets/portdha.json"
+import portdha from "../assets/portdha.json";
 export default function SocialMediaMarketing() {
   const useCases = [
-    
     {
       id: "mining",
       title: "Mining",
@@ -45,14 +44,10 @@ export default function SocialMediaMarketing() {
   const activeUseCase = useCases.find((uc) => uc.id === activeTab);
 
   return (
-    <div className="min-h-screen bg-gray-50">
-      
-
+    <div className="lg:block hidden min-h-screen bg-gray-50">
       {/* Hero Section */}
       <section className="max-w-7xl mx-auto px-6 py-12">
         <div>
-          
-
           <h2 className="text-5xl font-bold mt-6 leading-tight">
             Electrify your logistics
             <br />
@@ -124,7 +119,7 @@ export default function SocialMediaMarketing() {
                   />
                 </div>
               )}
-              
+
               {/* <Lottie
                 animationData={activeUseCase.image}
                 className="w-full object-cover rounded-2xl overflow-hidden"
@@ -135,10 +130,7 @@ export default function SocialMediaMarketing() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-gray-900 text-white py-20 my-20">
-        
-      </section>
-      
+      <section className="bg-gray-900 text-white py-20 my-20"></section>
     </div>
   );
 }

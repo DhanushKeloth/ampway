@@ -26,6 +26,9 @@ import port from "../assets/WhatsApp Image 2025-05-16 at 23.19.28.jpeg";
 import homemain from "../assets/homepage_ampway.svg";
 
 import { HiMenu, HiX } from "react-icons/hi"; // at top with other imports
+import Dummy from "./Dummy";
+import Services from "./Services";
+import UseCase3 from "./UseCase3";
 
 const HomeTwo = () => {
   const [showNavbar, setShowNavbar] = useState(true);
@@ -147,14 +150,14 @@ const HomeTwo = () => {
       <Clients />
       <FeaturesSection />
       <UseCase />
-      <UseCase2 />
+      {/* <UseCase2 /> */}
 
       {/* Port section */}
-      <div className="w-full  shadow-md rounded-2xl overflow-hidden mb-10 mt-40 bg-white">
+      {/* <div className="w-full  shadow-md rounded-2xl overflow-hidden mb-10 mt-40 bg-white">
         <div className="relative p-8">
           <div className="flex flex-col justify-center items-center">
             <div className="md:w-full bg-[#F1F5F9]">
-              {/* Replace with animation if needed */}
+              {/* Replace with animation if needed 
               <img src={port} alt="portdha" className="w-[60%]" />
             </div>
             <div className="md:w-1/2 p-8">
@@ -166,17 +169,17 @@ const HomeTwo = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Mining section */}
-      <div className="w-4/5 mx-auto rounded-2xl overflow-hidden mb-10 mt-10 bg-[#393838] from-neutral-700 to-neutral-900">
+      {/* <div className="w-4/5 mx-auto rounded-2xl overflow-hidden mb-10 mt-10 bg-[#393838] from-neutral-700 to-neutral-900">
         <div className="relative p-8">
           <div className="flex md:flex-row items-center justify-around">
             <p className="text-5xl font-bold text-yellow-400">Mining</p>
             <img src={mine} width="600px" className="rounded-2xl" />
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Team Section */}
       {/* <div className="bg-gray-50 flex flex-col items-center justify-center gap-10 p-10 h-screen w-4/5 ml-auto mr-auto rounded-[3rem]">
@@ -196,11 +199,13 @@ const HomeTwo = () => {
       </div>
 
       {/* FAQs */}
-      {/*
-      <div className="flex justify-center">
+      
+      <div className="flex  justify-center">
         <FAQ2 />
-      </div> */}
-
+      </div>
+      {/* <Services2/> */}
+      <UseCase3/>
+        {/* <Dummy/> */}
       <GetConnexted />
       <LogistFooter />
     </div>
