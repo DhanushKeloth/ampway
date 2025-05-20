@@ -36,7 +36,7 @@ export default function GetConnexted() {
         </div>
       </div>
 
-      <div className="bg-black w-full ">
+      <div className="bg-neutral-950 w-full ">
         <img src={footer} alt="Mill" className="object-cover w-full " />
       </div>
     </div>

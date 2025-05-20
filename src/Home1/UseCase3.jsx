@@ -1,18 +1,21 @@
 import { useState } from "react";
 import mine from "../assets/MININGBG (1).json";
+import port from "../assets/portdha.json"
 import Lottie from "lottie-react";
+import highway from "../assets/Highway.json"
 export default function UseCase3() {
   const [activeTab, setActiveTab] = useState("green");
 
   const tabContent = {
     green: {
-      color: "bg-gray-100",
+      color: "bg-white",
       border: "border-none shadow-md",
       text: "This is the Green Card content. The primary card with nature-themed information.",
       title: "Green Card",
       icon: "♪",
       label: "Mining",
       accent: "green",
+      'data':mine
     },
     red: {
       color: "bg-white",
@@ -22,15 +25,17 @@ export default function UseCase3() {
       icon: "▶",
       label: "Port",
       accent: "red",
+      'data':port
     },
     blue: {
-      color: "bg-neutral-200",
-      border: "border-none",
+      color: "bg-white",
+      border: "border-none shadow-md",
       text: "This is the Blue Card content. Calm and cool information lives here.",
       title: "Blue Card",
       icon: "□",
       label: "Highway",
       accent: "blue",
+      'data':highway
     },
   };
 
@@ -39,13 +44,13 @@ export default function UseCase3() {
   };
 
   return (
-    <div className="lg:hidden flex flex-col items-center w-full p-4 mb-16">
+    <div className="lg:hidden flex flex-col items-center w-full p-2 mb-16">
       {/* Tabs Navigation */}
       <div className="w-auto bg-gray-200 rounded-xl p-2 mb-6 flex justify-center">
         {Object.entries(tabContent).map(([key, tab]) => (
           <button
             key={key}
-            className={`mx-1 px-4 py-2 rounded-lg transition-all duration-200 font-medium ${
+            className={`mx-2 px-4 py-2 rounded-lg transition-all duration-200 font-medium ${
               activeTab === key
                 ? "bg-white text-black shadow-md"
                 : "text-gray-500 hover:bg-gray-200"
@@ -80,7 +85,7 @@ export default function UseCase3() {
                 className={`w-full mt-2 bg-${tab.accent}-200 h-auto rounded-lg flex items-center justify-center`}
               >
               <Lottie
-                animationData={mine}
+                animationData={tab.data}
                 loop={true}
                 className="w-full h-auto rounded-lg overflow-hidden"
               />
