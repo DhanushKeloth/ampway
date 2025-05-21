@@ -1,8 +1,9 @@
 import { useState } from "react";
 import mine from "../assets/MININGBG (1).json";
-import port from "../assets/portdha.json"
+import port from "../assets/portdha.json";
 import Lottie from "lottie-react";
-import highway from "../assets/Highway.json"
+import highway from "../assets/Highway.json";
+
 export default function UseCase3() {
   const [activeTab, setActiveTab] = useState("green");
 
@@ -10,32 +11,32 @@ export default function UseCase3() {
     green: {
       color: "bg-white",
       border: "border-none shadow-md",
-      text: "This is the Green Card content. The primary card with nature-themed information.",
+      text: "Enhance safety and efficiency in mining with rugged, zero-emission electric trucks.",
       title: "Green Card",
-      icon: "♪",
+      icon: "⚒️",
       label: "Mining",
       accent: "green",
-      'data':mine
+      data: mine,
     },
     red: {
       color: "bg-white",
       border: "border-none shadow-md",
-      text: "This is the Red Card content. Showcasing vibrant and energetic information.",
+      text: "Boost port productivity and lower emissions with our electric truck solutions.",
       title: "Red Card",
-      icon: "▶",
+      icon: "🚢",
       label: "Port",
       accent: "red",
-      'data':port
+      data: port,
     },
     blue: {
       color: "bg-white",
       border: "border-none shadow-md",
-      text: "This is the Blue Card content. Calm and cool information lives here.",
+      text: "Electrify highway logistics for cleaner and more efficient freight transport.",
       title: "Blue Card",
-      icon: "□",
+      icon: "🚛",
       label: "Highway",
       accent: "blue",
-      'data':highway
+      data: highway,
     },
   };
 
@@ -44,13 +45,24 @@ export default function UseCase3() {
   };
 
   return (
-    <div className="lg:hidden flex flex-col items-center w-full p-2 mb-16">
+    <div className="lg:hidden flex flex-col items-center w-full h-screen p-4 mb-16">
+      {/* Text Section */}
+      <div className="text-center mb-8">
+        <h2 className="text-3xl font-bold leading-tight">
+          Go electric with zero-emission trucks
+        </h2>
+        <p className="text-gray-600 mt-4 text-base leading-relaxed">
+          Drive sustainability and efficiency across your operations with our
+          cutting-edge electric trucks designed for real-world use cases.
+        </p>
+      </div>
+
       {/* Tabs Navigation */}
       <div className="w-auto bg-gray-200 rounded-xl p-2 mb-6 flex justify-center">
         {Object.entries(tabContent).map(([key, tab]) => (
           <button
             key={key}
-            className={`mx-2 px-4 py-2 rounded-lg transition-all duration-200 font-medium ${
+            className={`mx-2 px-2 py-2 rounded-lg transition-all duration-200 font-medium ${
               activeTab === key
                 ? "bg-white text-black shadow-md"
                 : "text-gray-500 hover:bg-gray-200"
@@ -84,11 +96,11 @@ export default function UseCase3() {
               <div
                 className={`w-full mt-2 bg-${tab.accent}-200 h-auto rounded-lg flex items-center justify-center`}
               >
-              <Lottie
-                animationData={tab.data}
-                loop={true}
-                className="w-full h-auto rounded-lg overflow-hidden"
-              />
+                <Lottie
+                  animationData={tab.data}
+                  loop={true}
+                  className="w-full h-auto rounded-lg overflow-hidden"
+                />
               </div>
             </div>
           </div>

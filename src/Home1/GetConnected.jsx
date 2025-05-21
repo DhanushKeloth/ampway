@@ -12,31 +12,31 @@ export default function GetConnexted() {
   };
 
   return (
-    <div className=" relative w-3/4 mx-auto overflow-hidden rounded-[3rem] bg-black text-white  flex flex-col md:flex-col items-center justify-center">
+    <div className=" relative md:w-3/4 mx-2 md:mx-auto overflow-hidden rounded-lg md:rounded-[3rem] bg-black text-white  flex flex-col md:flex-col items-center justify-center">
       {/* Subscription Section */}
-      <div className="absolute top-4 w-full md:w-1/2 md:top-20">
-        <h2 className="sm:text-lg md:text-5xl font-bold mb-6 leading-tight text-[#D9D4C0]">
+      <div className="absolute top-4  md:left-1/4  px-4  w-full    md:w-1/2 md:top-20">
+        <h2 className="text-md md:text-5xl  font-bold md:mb-6 mb-3 leading-tight text-[#D9D4C0]">
           Get insights on electric fleets, smart transport & more.
         </h2>
 
-        <div className="flex flex-col sm:flex-row w-full gap-3">
+        <div className="flex  sm:flex-row md:w-full w-1/2 gap-1 md:gap-3">
           <input
             type="email"
             placeholder="Your email"
-            className="flex-grow p-4 rounded-lg bg-neutral-800 border border-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-emerald-600"
+            className="flex-grow md:p-4  md:text-lg text-sm px-2 py-0 rounded-lg bg-neutral-800 border border-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-emerald-600"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
           <button
             onClick={handleSubscribe}
-            className="px-6 py-4 bg-[#33A675]  font-bold rounded-lg hover:bg-[#1D865E] transition duration-200"
+            className="md:px-6 px-2 md:text-lg text-sm md:py-4 py-1.5 bg-[#33A675]  md:font-bold rounded-lg hover:bg-[#1D865E] transition duration-200"
           >
-            Subscribe
+            Connect
           </button>
         </div>
       </div>
 
-      <div className="bg-neutral-950 w-full ">
+      <div className="bg-neutral-950 w-full mt-10 md:mt-0">
         <img src={footer} alt="Mill" className="object-cover w-full " />
       </div>
     </div>

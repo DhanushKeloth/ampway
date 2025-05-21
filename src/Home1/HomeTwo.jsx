@@ -29,6 +29,9 @@ import { HiMenu, HiX } from "react-icons/hi"; // at top with other imports
 import Dummy from "./Dummy";
 import Services from "./Services";
 import UseCase3 from "./UseCase3";
+import Footer2 from "./Footer2";
+import Footer3 from "./Footer3";
+import Footer4 from "./Footer4";
 
 const HomeTwo = () => {
   const [showNavbar, setShowNavbar] = useState(true);
@@ -182,7 +185,7 @@ const HomeTwo = () => {
       </div> */}
 
       {/* Team Section */}
-      {/* <div className="bg-gray-50 flex flex-col items-center justify-center gap-10 p-10 h-screen w-4/5 ml-auto mr-auto rounded-[3rem]">
+       <div className="bg-gray-50 flex flex-col items-center justify-center gap-10 p-10 h-screen w-4/5 ml-auto mr-auto rounded-[3rem]">
         <p className="text-[4rem] font-bold">Meet Our Team</p>
         <div className="flex gap-10">
           <ProfileFull
@@ -198,16 +201,19 @@ const HomeTwo = () => {
         </div>
       </div>
 
-      {/* FAQs */}
+
       
+      <UseCase3/>
       <div className="flex  justify-center">
         <FAQ2 />
       </div>
       {/* <Services2/> */}
-      <UseCase3/>
         {/* <Dummy/> */}
       <GetConnexted />
-      <LogistFooter />
+      {/* <LogistFooter /> */}
+      {/* <Footer2 /> */}
+      <Footer3/>
+      {/* <Footer4/> */}
     </div>
   );
 };
