@@ -81,7 +81,7 @@ const HomeTwo = () => {
               Home
             </a>
             <a href="#" className="text-gray-700 hover:text-black text-lg">
-              Servicesssss
+              Services
             </a>
             <a href="#" className="text-gray-700 hover:text-black text-md">
               About
@@ -109,7 +109,7 @@ const HomeTwo = () => {
                 Home
               </a>
               <a href="#" className="text-gray-700 hover:text-black text-base">
-                Services 
+                Services
               </a>
               <a href="#" className="text-gray-700 hover:text-black text-base">
                 About
@@ -186,8 +186,8 @@ const HomeTwo = () => {
       </div> */}
 
       {/* Team Section */}
-      <UseCase3/>
-       <div className="bg-gray-300 flex flex-col items-center  justify-center gap-10 p-10 h-auto md:h-screen w-full md:w-4/5 ml-auto mr-auto rounded-[3rem]">
+      <UseCase3 />
+      <div className="bg-gray-300 flex flex-col items-center  justify-center gap-10 p-10 h-auto md:h-screen w-full md:w-4/5 ml-auto mr-auto rounded-[3rem]">
         <p className="text-2xl md:text-4xl font-bold">Meet Our Team</p>
         <div className="flex md:flex-row flex-col gap-10">
           <ProfileFull
@@ -203,9 +203,6 @@ const HomeTwo = () => {
         </div>
       </div>
 
-
-      
-      
       <div className="flex  justify-center">
         <FAQ2 />
       </div>
