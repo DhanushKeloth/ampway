@@ -22,7 +22,7 @@ export default function Footer3() {
   };
 
   return (
-    <footer className="bg-black text-gray-300 py-16 h-[76vh] overflow-hidden mt-10">
+    <footer className="bg-black text-gray-300 py-16  h-[76vh] overflow-hidden mt-10">
       <div className="container mx-auto px-6 ">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 place-items-center">
           {/* Logo and left column */}
@@ -120,8 +120,8 @@ export default function Footer3() {
         </div>
 
         {/* Large faded text at bottom */}
-        <div className=" overflow-hidden">
-          <h1 className="text-[14rem] pt-0 text-center font-extrabold font-blackthorns text-gray-800 tracking-wider">
+        <div className="overflow-hidden">
+          <h1 className="text-[14rem] pt-0 text-center font-extrabold  text-gray-800 tracking-wider">
             AMPWAY
           </h1>
         </div>

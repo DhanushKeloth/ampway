@@ -4,9 +4,9 @@ import port from "../assets/WhatsApp Image 2025-05-16 at 23.19.28.jpeg";
 import mine from "../assets/image.png";
 import Lottie from "lottie-react";
 import miningbg from "../assets/MININGBG (1).json";
-import portdha from "../assets/portdha.json";
+import portdha from "../assets/portdha (1).json";
 import highway from "../assets/Highway.json";
-import {TruckElectric} from "lucide-react"
+import { TruckElectric } from "lucide-react";
 export default function SocialMediaMarketing() {
   const useCases = [
     {
@@ -32,7 +32,6 @@ export default function SocialMediaMarketing() {
       image: highway,
       bgColor: "bg-yellow-50",
     },
-    
   ];
 
   const [activeTab, setActiveTab] = useState("mining");
@@ -42,22 +41,22 @@ export default function SocialMediaMarketing() {
     <div className="lg:block hidden min-h-screen bg-gray-50">
       {/* Hero Section */}
       <section className="max-w-7xl mx-auto px-6 py-12 flex flex-col items-center justify-center text-center">
-  <div className="mb-4">
-    <span className="bg-gray-300 text-lg text-black px-8 py-2 rounded-full flex items-center w-fit mx-auto">
-      <TruckElectric className="inline mr-2" />
-      Use cases
-    </span>
-  </div>
+        <div className="mb-4">
+          <span className="bg-gray-300 text-lg text-black px-8 py-2 rounded-full flex items-center w-fit mx-auto">
+            <TruckElectric className="inline mr-2" />
+            Use cases
+          </span>
+        </div>
 
-  <h2 className="text-5xl font-bold mt-4 leading-tight">
-    Go electric with zero-emission trucks
-  </h2>
+        <h2 className="text-5xl font-bold mt-4 leading-tight">
+          Go electric with zero-emission trucks
+        </h2>
 
-  <p className="text-gray-600 mt-6 text-lg leading-relaxed max-w-2xl">
-    Drive sustainability and efficiency across your operations with our
-    cutting-edge electric trucks engineered for heavy-duty logistics.
-  </p>
-</section>
+        <p className="text-gray-600 mt-6 text-lg leading-relaxed max-w-2xl">
+          Drive sustainability and efficiency across your operations with our
+          cutting-edge electric trucks engineered for heavy-duty logistics.
+        </p>
+      </section>
 
       {/* Interactive Use Cases Section */}
       <section className="max-w-full mx-auto px-6 py-12 ">

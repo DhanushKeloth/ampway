@@ -3,6 +3,7 @@ import mine from "../assets/MININGBG (1).json";
 import port from "../assets/portdha.json";
 import Lottie from "lottie-react";
 import highway from "../assets/Highway.json";
+import { TruckElectric } from "lucide-react";
 
 export default function UseCase3() {
   const [activeTab, setActiveTab] = useState("green");
@@ -47,6 +48,10 @@ export default function UseCase3() {
   return (
     <div className="lg:hidden flex flex-col items-center w-full h-screen p-4 mb-16">
       {/* Text Section */}
+      <span className="bg-gray-300 mb-5 text-md text-black px-8 py-2 rounded-full flex items-center w-fit mx-auto">
+        <TruckElectric className="inline mr-2" height={20} />
+        Use cases
+      </span>
       <div className="text-center mb-8">
         <h2 className="text-3xl font-bold leading-tight">
           Go electric with zero-emission trucks
@@ -82,7 +87,9 @@ export default function UseCase3() {
         {Object.entries(tabContent).map(([key, tab]) => (
           <div
             key={key}
-            className={`absolute w-full transition-all duration-300 border-2 rounded-xl ${tab.border} ${tab.color} p-4 transform ${
+            className={`absolute w-full transition-all duration-300 border-2 rounded-xl ${
+              tab.border
+            } ${tab.color} p-4 transform ${
               activeTab === key
                 ? "z-30 scale-100 opacity-100"
                 : "z-10 scale-90 opacity-0"

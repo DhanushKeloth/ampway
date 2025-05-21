@@ -80,7 +80,7 @@ const HomeTwo = () => {
               Home
             </a>
             <a href="#" className="text-gray-700 hover:text-black text-lg">
-              Services
+              Servicesssss
             </a>
             <a href="#" className="text-gray-700 hover:text-black text-lg">
               About
@@ -108,7 +108,7 @@ const HomeTwo = () => {
                 Home
               </a>
               <a href="#" className="text-gray-700 hover:text-black text-base">
-                Services
+                Services 
               </a>
               <a href="#" className="text-gray-700 hover:text-black text-base">
                 About
@@ -185,9 +185,10 @@ const HomeTwo = () => {
       </div> */}
 
       {/* Team Section */}
-       <div className="bg-gray-50 flex flex-col items-center justify-center gap-10 p-10 h-screen w-4/5 ml-auto mr-auto rounded-[3rem]">
-        <p className="text-[4rem] font-bold">Meet Our Team</p>
-        <div className="flex gap-10">
+      <UseCase3/>
+       <div className="bg-gray-300 flex flex-col items-center  justify-center gap-10 p-10 h-auto md:h-screen w-full md:w-4/5 ml-auto mr-auto rounded-[3rem]">
+        <p className="text-2xl md:text-4xl font-bold">Meet Our Team</p>
+        <div className="flex md:flex-row flex-col gap-10">
           <ProfileFull
             profile={Aditya_D}
             name="Adithya Dahagama"
@@ -203,7 +204,7 @@ const HomeTwo = () => {
 
 
       
-      <UseCase3/>
+      
       <div className="flex  justify-center">
         <FAQ2 />
       </div>
