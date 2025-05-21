@@ -109,7 +109,7 @@ const HomeTwo = () => {
                 Home
               </a>
               <a href="#" className="text-gray-700 hover:text-black text-base">
-                Services
+                Survices
               </a>
               <a href="#" className="text-gray-700 hover:text-black text-base">
                 About
@@ -124,7 +124,7 @@ const HomeTwo = () => {
         {/* Hero Section */}
         <div className="container mx-auto px-4 flex items-center justify-center md:mt-20 mt-3">
           <div className="flex flex-col items-center text-center mb-12 md:-mt-56 -mt-16">
-            <h2 className="md:text-3xl lg:text-6xl leading-tight md:mb-6 mb-4 text-gray-900 manrope-font text-4xl">
+            <h2 className="md:text-3xl lg:text-6xl leading-tight md:mb-6 mb-4 text-gray-900 manrope-font text-[2.25rem]">
               <div className="flex flex-col md:gap-5 gap-2">
                 <span>Powering Freight</span>
                 <span>Electrification</span>
