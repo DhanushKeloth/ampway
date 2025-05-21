@@ -61,28 +61,29 @@ const HomeTwo = () => {
       <div className="bg-gray-100 min-h-screen flex justify-center p-3 md:mb-44 -mb-16">
         {/* Navbar */}
         <nav
-          className={`fixed z-50 top-0 left-0 right-0 bg-white w-[90%] md:w-4/5 mx-auto p-4 flex items-center justify-between shadow-md rounded-full transition-transform duration-300 ${
-            showNavbar ? "translate-y-0 mt-3" : "-translate-y-full"
-          }`}
+          className={`fixed z-50 top-0 left-0 right-0 bg-white w-[90%]md:h-20
+           md:w-4/5 mx-auto p-2 flex items-center justify-between shadow-md rounded-full transition-transform duration-300 ${
+             showNavbar ? "translate-y-0 mt-3" : "-translate-y-full"
+           }`}
         >
           {/* Logo */}
           <div className="flex items-center gap-2">
             <AiFillThunderbolt
               color="#33A675"
-              className="w-8 h-8 md:w-10 md:h-10"
+              className="w-8 h-8 md:w-8 md:h-8"
             />
-            <span className="font-bold text-2xl md:text-3xl">Ampway</span>
+            <span className="font-bold text-2xl md:text-xl">Ampway</span>
           </div>
 
           {/* Desktop Links */}
           <div className="hidden md:flex items-center gap-6 font-semibold">
-            <a href="#" className="text-gray-700 hover:text-black text-lg">
+            <a href="#" className="text-gray-700 hover:text-black text-md">
               Home
             </a>
             <a href="#" className="text-gray-700 hover:text-black text-lg">
               Servicesssss
             </a>
-            <a href="#" className="text-gray-700 hover:text-black text-lg">
+            <a href="#" className="text-gray-700 hover:text-black text-md">
               About
             </a>
             <button className="bg-[#33A675] text-white rounded-full px-6 py-3 text-lg">
@@ -123,7 +124,7 @@ const HomeTwo = () => {
         {/* Hero Section */}
         <div className="container mx-auto px-4 flex items-center justify-center md:mt-20 mt-3">
           <div className="flex flex-col items-center text-center mb-12 md:-mt-56 -mt-16">
-            <h2 className="md:text-3xl lg:text-7xl leading-tight md:mb-6 mb-4 text-gray-900 manrope-font text-4xl">
+            <h2 className="md:text-3xl lg:text-6xl leading-tight md:mb-6 mb-4 text-gray-900 manrope-font text-[2.25rem]">
               <div className="flex flex-col md:gap-5 gap-2">
                 <span>Powering Freight</span>
                 <span>Electrification</span>
@@ -138,14 +139,14 @@ const HomeTwo = () => {
             <div className="flex items-center justify-center ">
               <a
                 href="#"
-                className="bg-[#33A675] text-white rounded-full md:px-6 md:py-3 px-4 py-2 font-fontheader md:text-lg text-md"
+                className="bg-[#33A675] text-white rounded-full md:px-6 md:py-3 px-4 py-2  md:text-lg text-md"
               >
                 Explore Services
               </a>
             </div>
           </div>
           <div className="absolute w-full  md:-mt-16 mt-72">
-            <img src={homemain} alt="homepage" /> 
+            <img src={homemain} alt="homepage" />
           </div>
         </div>
       </div>
@@ -209,11 +210,11 @@ const HomeTwo = () => {
         <FAQ2 />
       </div>
       {/* <Services2/> */}
-        {/* <Dummy/> */}
+      {/* <Dummy/> */}
       <GetConnexted />
       {/* <LogistFooter /> */}
       {/* <Footer2 /> */}
-      <Footer3/>
+      <Footer3 />
       {/* <Footer4/> */}
     </div>
   );

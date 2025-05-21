@@ -110,7 +110,7 @@ const FeaturesSection = () => {
                     {feature.icon}
                   </div>
                   <div className="text-center">
-                    <h3 className="text-2xl font-bold font-fontheader text-black">
+                    <h3 className="text-2xl font-bold    text-black">
                       {feature.title}
                     </h3>
                     <p className="text-gray-600 mt-5 text-lg">
@@ -125,7 +125,6 @@ const FeaturesSection = () => {
           {/* Center circle overlay */}
           <div className="md:absolute md:block hidden top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
             <div className="w-24 h-24 rounded-full bg-white shadow-lg flex items-center justify-center border-2 border-[#3FB185]">
-              
               <AiFillThunderbolt
                 color="#33A675"
                 className="w-10 h-10 rounded-lg"
