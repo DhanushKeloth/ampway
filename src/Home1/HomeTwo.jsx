@@ -139,7 +139,7 @@ const HomeTwo = () => {
             <div className="flex items-center justify-center ">
               <a
                 href="#"
-                className="bg-[#33A675] text-white rounded-full md:px-6 md:py-3 px-4 py-2 font-fontheader md:text-lg text-md"
+                className="bg-[#33A675] text-white rounded-full md:px-6 md:py-3 px-4 py-2  md:text-lg text-md"
               >
                 Explore Services
               </a>

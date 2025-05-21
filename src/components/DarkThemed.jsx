@@ -33,7 +33,7 @@ const DarkThemed = () => {
         <div className="container mx-auto px-4 flex items-center justify-center">
           <div className="flex flex-col items-center text-center mb-12 mt-24">
             {/* Main headline using large typography like in the image */}
-            <h2 className="text-3xl md:text-6xl lg:text-8xl font-bold leading-tight mb-6 text-gray-200 font-blackthorns ">
+            <h2 className="text-3xl md:text-6xl lg:text-8xl font-bold leading-tight mb-6 text-gray-200  ">
               <span className="flex mb-5">Powering Freight</span>
               <span className="text-green-600 ">Electrification</span>
             </h2>

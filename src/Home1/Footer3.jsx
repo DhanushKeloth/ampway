@@ -121,7 +121,7 @@ export default function Footer3() {
 
         {/* Large faded text at bottom */}
         <div className=" overflow-hidden">
-          <h1 className="text-[14rem] pt-0 text-center font-extrabold font-blackthorns text-gray-800 tracking-wider">
+          <h1 className="text-[14rem] pt-0 text-center font-extrabold  text-gray-800 tracking-wider">
             AMPWAY
           </h1>
         </div>
