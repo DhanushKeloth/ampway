@@ -1,4 +1,5 @@
 import { Facebook, Instagram, Youtube, MapPin, Phone } from "lucide-react";
+import { AiFillThunderbolt } from "react-icons/ai";
 
 export default function Footer4() {
   return (
@@ -8,7 +9,12 @@ export default function Footer4() {
         <div className="flex flex-col md:flex-row justify-between items-center mb-6">
           {/* Logo */}
           <div className="mb-4 md:mb-0 ">
-            <div className="bg-white h-28 w-28 flex items-center justify-center rounded"></div>
+            <div className="flex h-28 w-28 border-2 border-gray-300 m-20 items-center justify-center gap-2">
+              <AiFillThunderbolt
+                color="#33A675"
+                className="w-8 h-8 md:w-28 md:h-28"
+              />
+            </div>
           </div>
 
           {/* Contact Information */}

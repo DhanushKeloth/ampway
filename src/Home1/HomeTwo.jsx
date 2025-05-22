@@ -32,6 +32,7 @@ import UseCase3 from "./UseCase3";
 import Footer2 from "./Footer2";
 import Footer3 from "./Footer3";
 import Footer4 from "./Footer4";
+import Footer5 from "./Footer5";
 
 const HomeTwo = () => {
   const [showNavbar, setShowNavbar] = useState(true);
@@ -61,7 +62,7 @@ const HomeTwo = () => {
       <div className="bg-gray-100 min-h-screen flex justify-center p-3 md:mb-44 -mb-16">
         {/* Navbar */}
         <nav
-          className={`fixed z-50 top-0 left-0 right-0 bg-white w-[90%]md:h-20
+          className={`fixed z-50 top-0 left-0 right-0 border-2 border-[#33A675] bg-white w-[90%]md:h-20
            md:w-4/5 mx-auto p-2 flex items-center justify-between shadow-md rounded-full transition-transform duration-300 ${
              showNavbar ? "translate-y-0 mt-3" : "-translate-y-full"
            }`}
@@ -136,10 +137,10 @@ const HomeTwo = () => {
               driven by renewable power.
             </p>
 
-            <div className="flex items-center justify-center ">
+            <div className="flex items-center border-2 border-[#33A675] rounded-full p-1  justify-center ">
               <a
                 href="#"
-                className="bg-[#33A675] text-white rounded-full md:px-6 md:py-3 px-4 py-2  md:text-lg text-md"
+                className="bg-[#33A675]  text-white rounded-full shadow-md md:px-6 md:py-3 px-4 py-2  md:text-lg text-md"
               >
                 Explore Services
               </a>
@@ -211,8 +212,8 @@ const HomeTwo = () => {
       <GetConnexted />
       {/* <LogistFooter /> */}
       {/* <Footer2 /> */}
-      <Footer3 />
-      {/* <Footer4/> */}
+      {/* <Footer3 /> */}
+      <Footer5 />
     </div>
   );
 };
