@@ -1,6 +1,7 @@
 import React from "react";
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
-import truck from "../assets/TRCUK.jpg";
+// import truck from "../assets/";
+
 
 const Footer5 = () => {
   return (

@@ -62,7 +62,7 @@ const HomeTwo = () => {
       <div className="bg-gray-100 min-h-screen flex justify-center p-3 md:mb-44 -mb-16">
         {/* Navbar */}
         <nav
-          className={`fixed z-50 top-0 left-0 right-0 border-2 border-[#33A675] bg-white w-[90%]md:h-20
+          className={`fixed z-50 top-0 left-0 right-0  bg-white w-[90%]md:h-20
            md:w-4/5 mx-auto p-2 flex items-center justify-between shadow-md rounded-full transition-transform duration-300 ${
              showNavbar ? "translate-y-0 mt-3" : "-translate-y-full"
            }`}
@@ -213,7 +213,7 @@ const HomeTwo = () => {
       {/* <LogistFooter /> */}
       {/* <Footer2 /> */}
       {/* <Footer3 /> */}
-      <Footer5 />
+      <Footer3 />
     </div>
   );
 };

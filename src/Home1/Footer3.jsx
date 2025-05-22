@@ -22,7 +22,7 @@ export default function Footer3() {
   };
 
   return (
-    <footer className="bg-black text-gray-300 py-16  h-[76vh] overflow-hidden mt-10">
+    <footer className="bg-[#1B1B1B] text-gray-300 py-16  h-[76vh] overflow-hidden mt-10">
       <div className="container mx-auto px-6 ">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 place-items-center">
           {/* Logo and left column */}
@@ -70,13 +70,13 @@ export default function Footer3() {
               <div className="space-y-4 ">
                 <div className="flex items-center  gap-2">
                   <MapPin size={18} className="text-gray-600" />
-                  <span className="text-lg text-gray-700">
-                    123 Maple Street, Springfield
+                  <span className="text-lg text-white">
+                    Hyderabad, Manikonda
                   </span>
                 </div>
                 <div className="flex items-center  gap-2">
                   <Phone size={18} className="text-gray-600" />
-                  <span className="text-lg text-gray-700">+91 6292226351</span>
+                  <span className="text-lg text-white">+91 9876543210</span>
                 </div>
               </div>
             </div>
@@ -120,8 +120,8 @@ export default function Footer3() {
         </div>
 
         {/* Large faded text at bottom */}
-        <div className="overflow-hidden">
-          <h1 className="text-[14rem] pt-0 text-center font-extrabold  text-gray-800 tracking-wider">
+        <div className="overflow-hidden ">
+          <h1 className=" text-[14rem] pt-0 text-center font-extrabold  text-[#323232] tracking-wider">
             AMPWAY
           </h1>
         </div>
