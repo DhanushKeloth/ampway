@@ -80,7 +80,7 @@ const HomeTwo = () => {
             <a href="#" className="text-gray-700 hover:text-black text-md">
               Home
             </a>
-            <a href="#" className="text-gray-700 hover:text-black text-lg">
+            <a href="#" className="text-gray-700 hover:text-black text-md">
               Services
             </a>
             <a href="#" className="text-gray-700 hover:text-black text-md">
