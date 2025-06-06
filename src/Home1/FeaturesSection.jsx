@@ -1,5 +1,5 @@
 import React from "react";
-import { Zap, Truck, Package, Battery } from "lucide-react";
+import { Zap, Truck, Package, Battery, TruckElectric } from "lucide-react";
 import { AiFillThunderbolt } from "react-icons/ai";
 const FeaturesSection = () => {
   const features = [
@@ -36,6 +36,10 @@ const FeaturesSection = () => {
   return (
     <section className="w-full py-24  relative">
       <div className="container mx-auto px-4 md:w-3/4  ">
+        <span className="bg-[#FFAC20] mb-5 text-md text-black px-8 py-2 rounded-full flex items-center w-fit mx-auto">
+        <TruckElectric className="inline mr-2" height={20} />
+        Services
+      </span>
         <h2 className="md:text-5xl text-4xl font-bold text-center mb-4">
           Our Services
         </h2>

@@ -38,7 +38,7 @@ export default function SocialMediaMarketing() {
   const activeUseCase = useCases.find((uc) => uc.id === activeTab);
 
   return (
-    <div className="lg:block hidden min-h-screen bg-gray-50">
+    <div className="lg:block hidden min-h-screen bg-gray-50 md:mb-10">
       {/* Hero Section */}
       <section className="max-w-7xl mx-auto px-6 py-12 flex flex-col items-center justify-center text-center">
         <div className="mb-4">
@@ -118,8 +118,7 @@ export default function SocialMediaMarketing() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="bg-gray-900 text-white py-20 my-20"></section>
+      
     </div>
   );
 }

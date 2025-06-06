@@ -33,7 +33,10 @@ import Footer2 from "./Footer2";
 import Footer3 from "./Footer3";
 import Footer4 from "./Footer4";
 import Footer5 from "./Footer5";
-
+import OurTeam from "./OurTeam";
+// import logotext from "../assets/ampwaylogotext_1.svg"
+import logo from "../assets/logo.svg"
+import thunder from "../assets/voltage.svg"
 const HomeTwo = () => {
   const [showNavbar, setShowNavbar] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
@@ -68,12 +71,18 @@ const HomeTwo = () => {
            }`}
         >
           {/* Logo */}
-          <div className="flex items-center gap-2">
-            <AiFillThunderbolt
+          <div className="flex items-center gap-0 ml-3">
+            {/* <AiFillThunderbolt
               color="#33A675"
               className="w-8 h-8 md:w-8 md:h-8"
+            /> */}
+            <img
+              src={logo}
+              alt="Logo"
+              className="w-8  h-8 md:w-9 md:h-9 "
             />
-            <span className="font-bold text-2xl md:text-xl">Ampway</span>
+
+            <span className="font-bold  text-2xl md:text-2xl">Ampway</span>
           </div>
 
           {/* Desktop Links */}
@@ -87,7 +96,7 @@ const HomeTwo = () => {
             <a href="#" className="text-gray-700 hover:text-black text-md">
               About
             </a>
-            <button className="bg-[#33A675] text-white rounded-full px-6 py-3 text-lg">
+            <button className="bg-[#33A675] text-white rounded-full px-6 py-3 text-md">
               Contact us
             </button>
           </div>
@@ -188,7 +197,8 @@ const HomeTwo = () => {
 
       {/* Team Section */}
       <UseCase3 />
-      <div className="bg-gray-300 flex flex-col items-center  justify-center gap-10 p-10 h-auto md:h-screen w-full md:w-4/5 ml-auto mr-auto rounded-[3rem]">
+      <OurTeam/>
+      {/* <div className="bg-gray-300 flex flex-col items-center  justify-center gap-10 p-10 h-auto md:h-screen w-full md:w-4/5 ml-auto mr-auto rounded-[3rem]">
         <p className="text-2xl md:text-4xl font-bold">Meet Our Team</p>
         <div className="flex md:flex-row flex-col gap-10">
           <ProfileFull
@@ -202,7 +212,7 @@ const HomeTwo = () => {
             title="Co Founder"
           />
         </div>
-      </div>
+      </div> */}
 
       <div className="flex  justify-center">
         <FAQ2 />
