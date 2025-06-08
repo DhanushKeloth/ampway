@@ -6,6 +6,7 @@ import Lottie from "lottie-react";
 import miningbg from "../assets/MININGBG (1).json";
 import portdha from "../assets/portdha (1).json";
 import highway from "../assets/Highway.json";
+import warehouse from "../assets/Highway copy (1).json"
 import { TruckElectric } from "lucide-react";
 export default function SocialMediaMarketing() {
   const useCases = [
@@ -29,7 +30,7 @@ export default function SocialMediaMarketing() {
       title: "Warehouses",
       description:
         "Streamline internal logistics and cut operational costs using quiet and eco-friendly electric trucks optimized for warehouse environments.",
-      image: highway,
+      image: warehouse,
       bgColor: "bg-yellow-50",
     },
   ];
@@ -49,7 +50,7 @@ export default function SocialMediaMarketing() {
         </div>
 
         <h2 className="text-5xl font-bold mt-4 leading-tight">
-          Go electric with zero-emission trucks
+          Achieve zero emissions with electric trucks.
         </h2>
 
         <p className="text-gray-600 mt-6 text-lg leading-relaxed max-w-2xl">

@@ -2,7 +2,8 @@ import { useState } from "react";
 import mine from "../assets/MININGBG (1).json";
 import port from "../assets/portdha (1).json";
 import Lottie from "lottie-react";
-import highway from "../assets/Highway.json";
+// import highway from "../assets/Highway.json";
+import warehouse from "../assets/Highway copy (1).json"
 import { TruckElectric } from "lucide-react";
 
 export default function UseCase3() {
@@ -37,7 +38,7 @@ export default function UseCase3() {
       icon: "🚛",
       label: "Highway",
       accent: "blue",
-      data: highway,
+      data: warehouse,
     },
   };
 

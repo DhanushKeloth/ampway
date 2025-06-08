@@ -136,8 +136,9 @@ const HomeTwo = () => {
           <div className="flex flex-col items-center text-center mb-12 md:-mt-56 -mt-16">
             <h2 className="md:text-3xl lg:text-6xl leading-tight md:mb-6 mb-4 text-gray-900 manrope-font text-[2.25rem]">
               <div className="flex flex-col md:gap-5 gap-2">
-                <span>Powering Freight</span>
-                <span>Electrification</span>
+                {/* <span>Powering Freight</span> */}
+                <span>De-Carbonizing the </span>
+                <span>Freight Industry</span>
               </div>
             </h2>
 
@@ -161,7 +162,7 @@ const HomeTwo = () => {
         </div>
       </div>
 
-      <Clients />
+      {/* <Clients /> */}
       <FeaturesSection />
       <UseCase />
       {/* <UseCase2 /> */}
