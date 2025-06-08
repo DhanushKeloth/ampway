@@ -137,7 +137,7 @@ const HomeTwo = () => {
             <h2 className="md:text-3xl lg:text-6xl leading-tight md:mb-6 mb-4 text-gray-900 manrope-font text-[2.25rem]">
               <div className="flex flex-col md:gap-5 gap-2">
                 {/* <span>Powering Freight</span> */}
-                <span>De-Carbonizing Freight</span>
+                <span>Decarbonizing Freight</span>
                 {/* <span>Freight </span> */}
               </div>
             </h2>
