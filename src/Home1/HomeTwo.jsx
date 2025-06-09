@@ -71,7 +71,7 @@ const HomeTwo = () => {
            }`}
         >
           {/* Logo */}
-          <div className="flex items-center gap-0 ml-3">
+          <div className="flex items-center gap-2 ml-3">
             {/* <AiFillThunderbolt
               color="#33A675"
               className="w-8 h-8 md:w-8 md:h-8"
@@ -143,8 +143,8 @@ const HomeTwo = () => {
             </h2>
 
             <p className="md:text-xl text-lg text-gray-600 mb-4 md:max-w-2xl w-full">
-              Ampway provides sustainable medium and heavy-duty transportation,
-              driven by renewable power.
+              Ampway provides sustainable medium and heavy-duty transportation service,
+              powered by renewable electricity.
             </p>
 
             <div className="flex items-center border-2 border-[#33A675] rounded-full p-1  justify-center ">
@@ -163,7 +163,9 @@ const HomeTwo = () => {
       </div>
 
       {/* <Clients /> */}
-      <FeaturesSection />
+      {/* <FeaturesSection /> */}
+      <Services2/>
+      {/* <Services/> */}
       <UseCase />
       {/* <UseCase2 /> */}
 

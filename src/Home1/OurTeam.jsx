@@ -7,7 +7,7 @@ export default function OurTeam() {
   const teamMembers = [
     {
       name: "Adithya Dahagama",
-      role: "Co Founder",
+      role: "CEO & Co Founder",
       description:
         "Our Co-founder brings strategic vision and financial expertise, guiding the company towards long-term stability.",
       image: adityad,
@@ -16,7 +16,7 @@ export default function OurTeam() {
     },
     {
       name: "Aditya Lanka",
-      role: "Co Founder",
+      role: "CTO & Co Founder",
       description:
         "Our Co-founder brings strategic vision and financial expertise, guiding the company towards long-term stability.",
       image: adityal,

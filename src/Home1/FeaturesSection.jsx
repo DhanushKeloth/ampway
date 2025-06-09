@@ -5,24 +5,17 @@ const FeaturesSection = () => {
   const features = [
     {
       icon: <Zap className="text-white w-6 h-6" />,
-      title: "EV-as-a-Service",
+      title: "Renewable Electricity",
       description:
-        "Ampway offers fleet electrification through innovative EV subscription and leasing models.",
+        "We power your freight movement with asset backed renewable electricity.",
       bgColor: "bg-[#3FB185]",
     },
     {
       icon: <Truck className="text-white w-6 h-6" />,
       title: "Charging Infrastructure",
       description:
-        "We establish robust charging networks to keep your electric fleet running efficiently.",
+        "We plan, design, and install robust charging networks to efficiently move your freight.",
       bgColor: "bg-[#3F56B1]",
-    },
-    {
-      icon: <Package className="text-white w-6 h-6" />,
-      title: "Tech-Enabled Fleet Management",
-      description:
-        "Monitor, optimize, and manage your fleet in real-time using our smart dashboard.",
-      bgColor: "bg-[#B13F41]",
     },
     {
       icon: <Battery className="text-white w-6 h-6" />,
@@ -30,6 +23,13 @@ const FeaturesSection = () => {
       description:
         "From EV procurement to deployment and maintenance, Ampway handles the entire lifecycle.",
       bgColor: "bg-[#B19E3F]",
+    },
+    {
+      icon: <Package className="text-white w-6 h-6" />,
+      title: "Fleet Tracking",
+      description:
+        "We monitor, manage, and optimize your freight movement in real-time using state-of-the-art technology.",
+      bgColor: "bg-[#B13F41]",
     },
   ];
 
@@ -41,11 +41,10 @@ const FeaturesSection = () => {
         Services
       </span>
         <h2 className="md:text-5xl text-4xl font-bold text-center mb-4">
-          Our Services
+          Our Service
         </h2>
         <p className="md:text-xl text-lg text-gray-700 text-center mb-12 md:w-1/2 mx-auto w-3/5">
-          Ampway helps companies electrify freight logistics with efficient,
-          eco-friendly, and scalable solutions.
+          Ampway helps companies reduce emissions and cost of freight logistics through electrification.
         </p>
 
         <div className="grid md:grid-cols-2 place-items-center relative bg-gray-100 md:gap-0 gap-3">
