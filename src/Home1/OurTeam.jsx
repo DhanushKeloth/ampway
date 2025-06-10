@@ -2,7 +2,7 @@ import React from "react";
 import { BsInstagram, BsLinkedin, BsTwitter } from "react-icons/bs";
 import adityad from "../assets/Aditya_D.png";
 import adityal from "../assets/Aditya_L.png";
-
+import { SlPeople } from "react-icons/sl";
 export default function OurTeam() {
   const teamMembers = [
     {
@@ -30,8 +30,8 @@ export default function OurTeam() {
       <div className="max-w-6xl w-full">
         {/* Header */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center bg-[#6AC0CF] text-white px-4 py-2 rounded-full text-sm font-medium mb-6">
-            Ampway Team
+          <div className="inline-flex items-center bg-[#61afbd] text-white px-4 py-2 rounded-full text-sm font-medium mb-6">
+            <SlPeople className="mr-2 font-extrabold" />Ampway Team
           </div>
           <h1 className="text-4xl sm:text-5xl font-bold text-black mb-4">
             Our People

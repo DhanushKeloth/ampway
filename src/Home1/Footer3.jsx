@@ -10,7 +10,7 @@ import {
 import { AiFillThunderbolt } from "react-icons/ai";
 import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
 import { CgYoutube } from "react-icons/cg";
-
+import logo from "../assets/logo.svg"
 export default function Footer3() {
   const [email, setEmail] = useState("");
 
@@ -22,20 +22,21 @@ export default function Footer3() {
   };
 
   return (
-    <footer className="bg-[#1B1B1B] text-gray-300 py-16  h-[76vh] overflow-hidden mt-10">
+    <footer className="bg-[#1B1B1B] text-gray-300 py-16   overflow-hidden mt-10">
       <div className="container mx-auto px-6 ">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 place-items-center">
           {/* Logo and left column */}
           <div className="flex items-center mb-6">
             <div className=" h-36 w-36 flex items-center justify-center rounded">
-              <AiFillThunderbolt
+              {/* <AiFillThunderbolt
                 color="#33A675"
                 className="w-8 h-8 md:w-36 md:h-36"
-              />
+              /> */}
+              <img src={logo} alt="logo" className="w-36 h-48" />
             </div>
           </div>
           <div className="md:col-span-1">
-            <nav className="space-y-4">
+            <nav className="space-y-4 text-xl">
               <a href="/explore" className="block hover:text-white transition">
                 Home
               </a>
@@ -45,9 +46,7 @@ export default function Footer3() {
               <a href="/pricing" className="block hover:text-white transition">
                 Use Cases
               </a>
-              <a href="/pricing" className="block hover:text-white transition">
-                FAQs
-              </a>
+              
               <a href="/pricing" className="block hover:text-white transition">
                 About Us
               </a>
@@ -120,11 +119,11 @@ export default function Footer3() {
         </div>
 
         {/* Large faded text at bottom */}
-        <div className="overflow-hidden ">
+        {/* <div className="overflow-hidden ">
           <h1 className=" text-[14rem] pt-0 text-center font-extrabold  text-[#323232] tracking-wider">
             AMPWAY
           </h1>
-        </div>
+        </div> */}
       </div>
     </footer>
   );

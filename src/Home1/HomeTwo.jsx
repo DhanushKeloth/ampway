@@ -35,8 +35,8 @@ import Footer4 from "./Footer4";
 import Footer5 from "./Footer5";
 import OurTeam from "./OurTeam";
 // import logotext from "../assets/ampwaylogotext_1.svg"
-import logo from "../assets/logo.svg"
-import thunder from "../assets/voltage.svg"
+import logo from "../assets/logo.svg";
+import thunder from "../assets/voltage.svg";
 const HomeTwo = () => {
   const [showNavbar, setShowNavbar] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
@@ -76,11 +76,7 @@ const HomeTwo = () => {
               color="#33A675"
               className="w-8 h-8 md:w-8 md:h-8"
             /> */}
-            <img
-              src={logo}
-              alt="Logo"
-              className="w-8  h-8 md:w-9 md:h-9 "
-            />
+            <img src={logo} alt="Logo" className="w-8  h-8 md:w-9 md:h-9 " />
 
             <span className="font-bold  text-2xl md:text-2xl">Ampway</span>
           </div>
@@ -90,10 +86,13 @@ const HomeTwo = () => {
             <a href="#" className="text-gray-700 hover:text-black text-md">
               Home
             </a>
-            <a href="#" className="text-gray-700 hover:text-black text-md">
+            <a
+              href="#services"
+              className="text-gray-700 hover:text-black text-md"
+            >
               Services
             </a>
-            <a href="#" className="text-gray-700 hover:text-black text-md">
+            <a href="#ourteam" className="text-gray-700 hover:text-black text-md">
               About
             </a>
             <button className="bg-[#33A675] text-white rounded-full px-6 py-3 text-md">
@@ -118,10 +117,10 @@ const HomeTwo = () => {
               <a href="#" className="text-gray-700 hover:text-black text-base">
                 Home
               </a>
-              <a href="#" className="text-gray-700 hover:text-black text-base">
+              <a href="#services" className="text-gray-700 hover:text-black text-base">
                 Services
               </a>
-              <a href="#" className="text-gray-700 hover:text-black text-base">
+              <a href="#ourteam" className="text-gray-700 hover:text-black text-base">
                 About
               </a>
               <button className="bg-[#33A675] text-white rounded-full px-4 py-2 text-base">
@@ -143,13 +142,13 @@ const HomeTwo = () => {
             </h2>
 
             <p className="md:text-xl text-lg text-gray-600 mb-4 md:max-w-2xl w-full">
-              Ampway provides sustainable medium and heavy-duty transportation service,
-              powered by renewable electricity.
+              Ampway provides sustainable medium and heavy-duty transportation
+              service, powered by renewable electricity.
             </p>
 
-            <div className="flex items-center border-2 border-[#33A675] rounded-full p-1  justify-center ">
+            <div className="flex z-10 items-center border-2 border-[#33A675] rounded-full p-1  justify-center ">
               <a
-                href="#"
+                href="#services"
                 className="bg-[#33A675]  text-white rounded-full shadow-md md:px-6 md:py-3 px-4 py-2  md:text-lg text-md"
               >
                 Explore Services
@@ -164,7 +163,9 @@ const HomeTwo = () => {
 
       {/* <Clients /> */}
       {/* <FeaturesSection /> */}
-      <Services2/>
+      <div id="services" className="scroll-mt-24">
+        <Services2 />
+      </div>
       {/* <Services/> */}
       <UseCase />
       {/* <UseCase2 /> */}
@@ -200,7 +201,11 @@ const HomeTwo = () => {
 
       {/* Team Section */}
       <UseCase3 />
-      <OurTeam/>
+      <div id="ourteam">
+      <OurTeam />
+
+      </div>
+
       {/* <div className="bg-gray-300 flex flex-col items-center  justify-center gap-10 p-10 h-auto md:h-screen w-full md:w-4/5 ml-auto mr-auto rounded-[3rem]">
         <p className="text-2xl md:text-4xl font-bold">Meet Our Team</p>
         <div className="flex md:flex-row flex-col gap-10">
