@@ -9,7 +9,7 @@ export default function OurTeam() {
       name: "Adithya Dahagama",
       role: "CEO & Co Founder",
       description:
-        "Our Co-founder brings strategic vision and financial expertise, guiding the company towards long-term stability.",
+        " Our CEO & Co-Founder brings over 15 years of global experience driving sustainable transitions.",
       image: adityad,
       twitter: "#",
       linkedin: "#",
@@ -18,7 +18,7 @@ export default function OurTeam() {
       name: "Aditya Lanka",
       role: "CTO & Co Founder",
       description:
-        "Our Co-founder brings strategic vision and financial expertise, guiding the company towards long-term stability.",
+        " Our CTO & Co-Founder brings over 15 years of technical and business experience in global automotive markets.",
       image: adityal,
       twitter: "#",
       linkedin: "#",

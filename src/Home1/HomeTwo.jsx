@@ -37,6 +37,7 @@ import OurTeam from "./OurTeam";
 // import logotext from "../assets/ampwaylogotext_1.svg"
 import logo from "../assets/logo.svg";
 import thunder from "../assets/voltage.svg";
+import electricnobg  from "../assets/electricgrid_nobg.svg"
 const HomeTwo = () => {
   const [showNavbar, setShowNavbar] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
@@ -156,7 +157,7 @@ const HomeTwo = () => {
             </div>
           </div>
           <div className="absolute w-full  md:-mt-16 mt-72">
-            <img src={homemain} alt="homepage" />
+            <img src={electricnobg} alt="homepage" />
           </div>
         </div>
       </div>
