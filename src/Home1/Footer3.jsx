@@ -10,7 +10,9 @@ import {
 import { AiFillThunderbolt } from "react-icons/ai";
 import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
 import { CgYoutube } from "react-icons/cg";
-import logo from "../assets/logo.svg"
+import logo from "../assets/logo.svg";
+import { FaLinkedin } from "react-icons/fa6";
+import { MdOutlineEmail } from "react-icons/md";
 export default function Footer3() {
   const [email, setEmail] = useState("");
 
@@ -22,33 +24,27 @@ export default function Footer3() {
   };
 
   return (
-    <footer className="bg-[#1B1B1B] text-gray-300 pt-16 pb-0 overflow-hidden mt-10 h-[35rem] relative">
-
+    <footer className="bg-[#1B1B1B] text-gray-300 md:pt-16 pt-10 pb-0 overflow-hidden mt-10  ">
       <div className="container mx-auto px-6 ">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-10 place-items-center">
+        <div className="grid grid-cols-2 md:grid-cols-3 md:gap-10 gap-5 place-items-center">
           {/* Logo and left column */}
-          <div className="flex items-center mb-6">
-            <div className=" h-36 w-36 flex items-center justify-center rounded">
-              {/* <AiFillThunderbolt
-                color="#33A675"
-                className="w-8 h-8 md:w-36 md:h-36"
-              /> */}
-              <img src={logo} alt="logo" className="w-36 h-48" />
-            </div>
+          <div className="">
+            <img src={logo} alt="logo" className="md:w-36 md:h-48 w-16 h-16" />
           </div>
           <div className="md:col-span-1">
-            <nav className="space-y-4 text-xl">
-              <a href="/explore" className="block hover:text-white transition">
+            <nav className="space-y-4 text-md text-neutral-500">
+              <span className="mb-10 text-white ">Overview</span>
+              <a href="#" className="block hover:text-white transition">
                 Home
               </a>
-              <a href="/faqs" className="block hover:text-white transition">
+              <a href="#services" className="block hover:text-white transition">
                 Services
               </a>
-              <a href="/pricing" className="block hover:text-white transition">
+              <a href="#usecase" className="block hover:text-white transition">
                 Use Cases
               </a>
-              
-              <a href="/pricing" className="block hover:text-white transition">
+
+              <a href="#ourteam" className="block hover:text-white transition">
                 About Us
               </a>
             </nav>
@@ -65,63 +61,55 @@ export default function Footer3() {
           </div> */}
 
           {/* Newsletter signup */}
-          <div className="md:col-span-2">
-            <div className="mb-8">
-              <div className="space-y-4 ">
-                <div className="flex items-center  gap-2">
-                  <MapPin size={18} className="text-gray-600" />
-                  <span className="text-lg text-white">
-                    Hyderabad, Manikonda
-                  </span>
-                </div>
-                <div className="flex items-center  gap-2">
-                  <Phone size={18} className="text-gray-600" />
-                  <span className="text-lg text-white">+91 9876543210</span>
-                </div>
+          {/* Contact and Social Media Section */}
+          <div className="w-full col-span-2 md:col-span-1 flex md:mt-0 mt-5 flex-col items-start justify-start">
+            <div className="w-full mb-6 space-y-4">
+              <div className="flex items-center md:justify-normal justify-center gap-2">
+                <MapPin size={18} className="text-gray-600" />
+                <span className="md:text-lg text-white">Hyderabad, Manikonda</span>
               </div>
+              <div className="flex items-center md:justify-normal justify-center gap-2">
+                <Phone size={18} className="text-gray-600" />
+                <span className="md:text-lg text-white">+91 9876543210</span>
+              </div>
+              
             </div>
 
-            <div>
-              <h3 className="text-white text-lg mb-4">Connect with us</h3>
+            <div className="w-full mt-2 flex flex-col justify-center items-center">
+              {/* <h3 className=" text-lg mb-4 text-neutral-500">Connect with us</h3> */}
               <div className="flex space-x-4">
                 <a
                   href="#"
                   className="p-2 bg-gray-800 rounded-full hover:bg-gray-700 transition"
                 >
-                  <Dribbble size={20} />
+                  <FaInstagram size={20} />
                 </a>
                 <a
                   href="#"
                   className="p-2 bg-gray-800 rounded-full hover:bg-gray-700 transition"
                 >
-                  <Instagram size={20} />
+                  <FaLinkedin size={20} />
                 </a>
                 <a
                   href="#"
                   className="p-2 bg-gray-800 rounded-full hover:bg-gray-700 transition"
                 >
-                  <Linkedin size={20} />
-                </a>
-                <a
-                  href="#"
-                  className="p-2 bg-gray-800 rounded-full hover:bg-gray-700 transition"
-                >
-                  <Mail size={20} />
+                  <MdOutlineEmail size={20} />
                 </a>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="mt-16 border-t border-gray-800 pt-8">
-          <p className="text-sm text-gray-500">
+        <div className="md:mt-16 mt-10 border-t  border-gray-800 md:pt-8 pt-4">
+          <p className="text-sm text-gray-500 md:text-left text-center">
             © Ampway Pvt. Ltd All rights reserved.
           </p>
         </div>
 
         {/* Large faded text at bottom */}
-        <div className="overflow-hidden ">
-          <h1 className=" md:text-[14rem] pt-0  text-center font-extrabold  text-[#323232] tracking-wider">
+        <div className=" ">
+          <h1 className=" md:text-[14rem] text-6xl pt-0 mt-4  text-center font-extrabold  text-[#323232] tracking-wider">
             AMPWAY
           </h1>
         </div>

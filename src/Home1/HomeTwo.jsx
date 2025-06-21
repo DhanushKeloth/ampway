@@ -168,7 +168,9 @@ const HomeTwo = () => {
         <Services2 />
       </div>
       {/* <Services/> */}
+      <div id="usecase">
       <UseCase />
+      </div>
       {/* <UseCase2 /> */}
 
       {/* Port section */}
@@ -201,7 +203,9 @@ const HomeTwo = () => {
       </div> */}
 
       {/* Team Section */}
+      <div id="#usecase">
       <UseCase3 />
+      </div>
       <div id="ourteam">
       <OurTeam />
 

@@ -6,8 +6,10 @@ import Lottie from "lottie-react";
 import miningbg from "../assets/MININGBG (1).json";
 import portdha from "../assets/portdha (1).json";
 import highway from "../assets/Highway.json";
-import warehouse from "../assets/Highway copy (1).json"
+// import warehouse from "../assets/Highway copy (1).json"
+import warehouse from "../assets/Highway copy copy.json"
 import { TruckElectric } from "lucide-react";
+
 export default function SocialMediaMarketing() {
   const useCases = [
     {
