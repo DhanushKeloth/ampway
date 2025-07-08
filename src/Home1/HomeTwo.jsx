@@ -37,7 +37,7 @@ import OurTeam from "./OurTeam";
 // import logotext from "../assets/ampwaylogotext_1.svg"
 import logo from "../assets/logo.svg";
 import thunder from "../assets/voltage.svg";
-import electricnobg  from "../assets/electricgrid_nobg.svg"
+import electricnobg from "../assets/electricgrid_nobg.svg";
 const HomeTwo = () => {
   const [showNavbar, setShowNavbar] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
@@ -93,7 +93,10 @@ const HomeTwo = () => {
             >
               Services
             </a>
-            <a href="#ourteam" className="text-gray-700 hover:text-black text-md">
+            <a
+              href="#ourteam"
+              className="text-gray-700 hover:text-black text-md"
+            >
               About
             </a>
             <button className="bg-[#33A675] text-white rounded-full px-6 py-3 text-md">
@@ -118,10 +121,16 @@ const HomeTwo = () => {
               <a href="#" className="text-gray-700 hover:text-black text-base">
                 Home
               </a>
-              <a href="#services" className="text-gray-700 hover:text-black text-base">
+              <a
+                href="#services"
+                className="text-gray-700 hover:text-black text-base"
+              >
                 Services
               </a>
-              <a href="#ourteam" className="text-gray-700 hover:text-black text-base">
+              <a
+                href="#ourteam"
+                className="text-gray-700 hover:text-black text-base"
+              >
                 About
               </a>
               <button className="bg-[#33A675] text-white rounded-full px-4 py-2 text-base">
@@ -169,7 +178,7 @@ const HomeTwo = () => {
       </div>
       {/* <Services/> */}
       <div id="usecase">
-      <UseCase />
+        <UseCase />
       </div>
       {/* <UseCase2 /> */}
 
@@ -204,11 +213,10 @@ const HomeTwo = () => {
 
       {/* Team Section */}
       <div id="#usecase">
-      <UseCase3 />
+        <UseCase3 />
       </div>
       <div id="ourteam">
-      <OurTeam />
-
+        <OurTeam />
       </div>
 
       {/* <div className="bg-gray-300 flex flex-col items-center  justify-center gap-10 p-10 h-auto md:h-screen w-full md:w-4/5 ml-auto mr-auto rounded-[3rem]">
