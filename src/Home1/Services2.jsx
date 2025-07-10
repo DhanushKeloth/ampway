@@ -37,8 +37,8 @@ const Services2 = () => {
         <TruckElectric className="inline mr-2" height={20} />
         Our Service
       </span>
-        <h2 className="text-5xl font-bold text-center mb-4">Zero Emissions Transportation (ZET) as a Service</h2>
-        <p className="text-xl text-gray-700 text-center mb-12 max-w-3xl mx-auto">
+        <h2 className="md:text-5xl text-2xl font-bold text-center mb-4">Zero Emissions Transportation (ZET) as a Service</h2>
+        <p className="md:text-xl text-gray-700 text-center mb-12 max-w-3xl mx-auto">
           Ampway helps companies electrify freight logistics with efficient,
           eco-friendly, and scalable solutions.
         </p>

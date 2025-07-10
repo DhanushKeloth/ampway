@@ -144,6 +144,18 @@
 .animate-marquee {
   animation: marquee 5s linear infinite;
 }
+.color-blink-hover {
+  animation: colorBlink 1s infinite;
+}
+
+@keyframes colorBlink {
+  0%, 100% {
+    color: #20AC65;
+  }
+  50% {
+    color: #4ce490;
+  }
+}
 
 .border-image-bottom {
   border-image: linear-gradient(to bottom, transparent, #3fb185, transparent) 1;

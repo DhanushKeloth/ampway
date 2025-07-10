@@ -67,7 +67,7 @@ const HomeTwo = () => {
         {/* Navbar */}
         <nav
           className={`fixed z-50 top-0 left-0 right-0  bg-white w-[90%]md:h-20
-           md:w-4/5 mx-auto p-2 flex items-center justify-between shadow-md rounded-full transition-transform duration-300 ${
+           md:w-4/5 md:mx-auto mx-2 p-2 flex items-center justify-between shadow-md rounded-full transition-transform duration-300 ${
              showNavbar ? "translate-y-0 mt-3" : "-translate-y-full"
            }`}
         >
@@ -105,7 +105,7 @@ const HomeTwo = () => {
           </div>
 
           {/* Mobile Hamburger Menu */}
-          <div className="md:hidden">
+          <div className="md:hidden mr-2 flex align-center p-1">
             <button onClick={toggleMenu}>
               {menuOpen ? (
                 <HiX className="w-8 h-8 text-gray-800" />

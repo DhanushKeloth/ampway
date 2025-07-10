@@ -5,6 +5,7 @@ import Lottie from "lottie-react";
 // import highway from "../assets/Highway.json";
 import warehouse from "../assets/Highway copy (1).json"
 import { TruckElectric } from "lucide-react";
+import highway from "../assets/Highway copy copy.json"
 
 export default function UseCase3() {
   const [activeTab, setActiveTab] = useState("green");
@@ -38,7 +39,7 @@ export default function UseCase3() {
       icon: "🚛",
       label: "Highway",
       accent: "blue",
-      data: warehouse,
+      data: highway,
     },
   };
 

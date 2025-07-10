@@ -46,7 +46,7 @@ export default function Footer3() {
               </a>
             </nav>
           </div>
-          
+
           {/* Desktop: Logo and Navigation in separate columns */}
           <div className="hidden md:block">
             <img src={logo} alt="logo" className="w-36 h-48" />
@@ -84,18 +84,21 @@ export default function Footer3() {
           <div className="w-full col-span-1 md:col-span-1 flex md:mt-0 mt-5 flex-col items-start justify-start ml-4 md:ml-0">
             <div className="w-full mb-6 space-y-4">
               <div className="flex items-center justify-start md:justify-normal gap-2">
-                <MapPin size={18} className="text-gray-600" />
-                <span className="md:text-lg text-white">Hyderabad, Manikonda</span>
+                <MapPin size={18} className="text-gray-500" />
+                <span className="md:text-md text-neutral-400">
+                  Hyderabad, Manikonda
+                </span>
               </div>
               <div className="flex items-center justify-start md:justify-normal gap-2">
-                <Phone size={18} className="text-gray-600" />
-                <span className="md:text-lg text-white">+91 9876543210</span>
+                <Phone size={18} className="text-gray-500" />
+                <span className="md:text-md text-neutral-400">+91 9876543210</span>
               </div>
-              
             </div>
 
-            <div className="w-full mt-2 flex flex-col items-start md:items-center justify-start md:justify-center">
-              {/* <h3 className=" text-lg mb-4 text-neutral-500">Connect with us</h3> */}
+            <div className="w-full mt-2 flex flex-col items-start md:items-start justify-start md:justify-center">
+              <h3 className=" text-md mb-4 text-neutral-500">
+                Connect with us
+              </h3>
               <div className="flex space-x-4">
                 <a
                   href="#"
@@ -118,25 +121,28 @@ export default function Footer3() {
               </div>
             </div>
           </div>
-        </div>
+          </div>
 
-        <div className="md:mt-16 mt-10 border-t  border-gray-800 md:pt-8 pt-4">
+        <div className="md:mt-16 mt-10 border-t  border-gray-800 md:pt-8 pt-4 mb-10">
           <div className="flex flex-col md:flex-row md:justify-between items-start md:items-center gap-4">
             <p className="text-sm text-gray-500">
               © Ampway Pvt. Ltd All rights reserved.
             </p>
-            <p className="text-sm text-gray-600 flex items-center gap-2">
-              Designed and Developed by{" "}
-              <div className="flex items-center gap-2">
+            
+            <p className="text-sm text-gray-600 flex items-center gap-1">
+              Designed by
+              <p className="text-[#20AC65]">Dhanush</p>&
+              <p className="text-[#20AC65]">Adhikowshik</p>
+              {/* <div className="flex items-center gap-2">
                 <div className="w-8 h-8 rounded-full border-2 border-green-400 bg-gray-600 hover:border-green-300 transition-colors overflow-hidden">
-                  {/* Placeholder for developer image */}
+                  
                   <div className="w-full h-full bg-gray-600"></div>
                 </div>
                 <div className="w-8 h-8 rounded-full border-2 border-green-400 bg-gray-600 hover:border-green-300 transition-colors overflow-hidden">
-                  {/* Placeholder for developer image */}
+                  
                   <div className="w-full h-full bg-gray-600"></div>
                 </div>
-              </div>
+              </div> */}
             </p>
           </div>
         </div>
