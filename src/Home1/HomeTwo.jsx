@@ -235,9 +235,9 @@ const HomeTwo = () => {
         </div>
       </div> */}
 
-      <div className="flex  justify-center">
+      {/* <div className="flex  justify-center">
         <FAQ2 />
-      </div>
+      </div> */}
       {/* <Services2/> */}
       {/* <Dummy/> */}
       <GetConnexted />

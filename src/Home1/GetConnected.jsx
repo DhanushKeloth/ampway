@@ -24,15 +24,16 @@ export default function GetConnexted() {
             type="email"
             placeholder="Your email"
             className="flex-grow md:p-4  md:text-lg text-sm px-2 py-0 rounded-lg bg-neutral-800 border border-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-emerald-600"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            value={"aditya@xyz.com"}
+            // onChange={(e) => setEmail(e.target.value)}
           />
-          <button
+          <a
+            href={`mailto:${"aditya@xyz.com"}`}
             onClick={handleSubscribe}
             className="md:px-6 px-2 md:text-lg text-sm md:py-4 py-1.5 bg-[#33A675]  md:font-bold rounded-lg hover:bg-[#1D865E] transition duration-200"
           >
             Connect
-          </button>
+          </a>
         </div>
       </div>
 

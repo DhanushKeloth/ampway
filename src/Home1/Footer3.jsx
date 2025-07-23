@@ -83,15 +83,17 @@ export default function Footer3() {
           {/* Contact and Social Media Section */}
           <div className="w-full col-span-1 md:col-span-1 flex md:mt-0 mt-5 flex-col items-start justify-start ml-4 md:ml-0">
             <div className="w-full mb-6 space-y-4">
-              <div className="flex items-center justify-start md:justify-normal gap-2">
-                <MapPin size={18} className="text-gray-500" />
-                <span className="md:text-md text-neutral-400">
-                  Hyderabad, Manikonda
+              <div className="flex items-center justify-start  gap-2">
+                <MapPin className="text-gray-500 w-5 h-5 md:w-5 md:h-5" />
+                <span className="md:text-md text-sm text-neutral-400 md:w-3/4 w-48">
+                  Accelerated at THub, Knowledge City, Cyberabad, Hyderabad, Telangana, 500081
                 </span>
               </div>
               <div className="flex items-center justify-start md:justify-normal gap-2">
-                <Phone size={18} className="text-gray-500" />
-                <span className="md:text-md text-neutral-400">+91 9876543210</span>
+                <Phone className="text-gray-500 w-5 h-5 md:w-5 md:h-5" />
+                <span className="md:text-md text-sm text-neutral-400 md:w-3/4 w-48">
+                  +91 9876543210
+                </span>
               </div>
             </div>
 
@@ -121,35 +123,26 @@ export default function Footer3() {
               </div>
             </div>
           </div>
-          </div>
+        </div>
 
         <div className="md:mt-16 mt-10 border-t  border-gray-800 md:pt-8 pt-4 mb-10">
           <div className="flex flex-col md:flex-row md:justify-between items-start md:items-center gap-4">
             <p className="text-sm text-gray-500">
               © Ampway Pvt. Ltd All rights reserved.
             </p>
-            
+
             <p className="text-sm text-gray-600 flex items-center gap-1">
               Designed by
-              <p className="text-[#20AC65]">Dhanush</p>&
-              <p className="text-[#20AC65]">Adhikowshik</p>
-              {/* <div className="flex items-center gap-2">
-                <div className="w-8 h-8 rounded-full border-2 border-green-400 bg-gray-600 hover:border-green-300 transition-colors overflow-hidden">
-                  
-                  <div className="w-full h-full bg-gray-600"></div>
-                </div>
-                <div className="w-8 h-8 rounded-full border-2 border-green-400 bg-gray-600 hover:border-green-300 transition-colors overflow-hidden">
-                  
-                  <div className="w-full h-full bg-gray-600"></div>
-                </div>
-              </div> */}
+              <p className="text-[#20AC65] color-blink-hover">Dhanush</p>&
+              <p className="text-[#20AC65] color-blink-hover">Adhikowshik</p>
+           
             </p>
           </div>
         </div>
 
         {/* Large faded text at bottom */}
         <div className=" ">
-          <h1 className=" md:text-[14rem] text-6xl pt-0 mt-4  text-center font-extrabold  text-[#323232] tracking-wider">
+          <h1 className=" md:text-[14rem] text-6xl pt-0 mt-4 md:pb-0 pb-2  text-center font-extrabold  text-[#323232] tracking-wider">
             AMPWAY
           </h1>
         </div>
