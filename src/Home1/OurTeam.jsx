@@ -11,8 +11,7 @@ export default function OurTeam() {
       description:
         " Our CEO & Co-Founder brings over 15 years of global experience driving sustainable transitions.",
       image: adityad,
-      twitter: "#",
-      linkedin: "#",
+      
     },
     {
       name: "Aditya Lanka",
@@ -20,8 +19,7 @@ export default function OurTeam() {
       description:
         " Our CTO & Co-Founder brings over 15 years of technical and business experience in global automotive markets.",
       image: adityal,
-      twitter: "#",
-      linkedin: "#",
+      
     },
   ];
 
@@ -79,12 +77,7 @@ export default function OurTeam() {
 
                   {/* Social Links */}
                   <div className="flex gap-3 mt-4 md:mt-0">
-                    <a href="#" className="text-gray-600 hover:text-[#1a7b56]">
-                      <BsInstagram size={20} />
-                    </a>
-                    <a href="#" className="text-gray-600 hover:text-[#1a7b56]">
-                      <BsTwitter size={20} />
-                    </a>
+                    
                     <a href="#" className="text-gray-600 hover:text-[#1a7b56]">
                       <BsLinkedin size={20} />
                     </a>

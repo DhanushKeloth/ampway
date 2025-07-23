@@ -38,6 +38,7 @@ import OurTeam from "./OurTeam";
 import logo from "../assets/logo.svg";
 import thunder from "../assets/voltage.svg";
 import electricnobg from "../assets/electricgrid_nobg.svg";
+import homepage from "../assets/electricgrid2.svg";
 const HomeTwo = () => {
   const [showNavbar, setShowNavbar] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
@@ -97,11 +98,11 @@ const HomeTwo = () => {
               href="#ourteam"
               className="text-gray-700 hover:text-black text-md"
             >
-              About
+              About Us
             </a>
             <a href="#phonenumber">
               <button className="bg-[#33A675] text-white rounded-full px-6 py-3 text-md">
-                Contact us
+                Contact Us
               </button>
             </a>
           </div>
@@ -133,7 +134,7 @@ const HomeTwo = () => {
                 href="#ourteam"
                 className="text-gray-700 hover:text-black text-base"
               >
-                About
+                About Us
               </a>
               <a href="#phonenumber">
                 <button className="bg-[#33A675] text-white rounded-full px-4 py-2 text-base">
@@ -170,7 +171,7 @@ const HomeTwo = () => {
             </div>
           </div>
           <div className="absolute w-full  md:-mt-16 mt-72">
-            <img src={electricnobg} alt="homepage" />
+            <img src={homepage} alt="homepage" />
           </div>
         </div>
       </div>
