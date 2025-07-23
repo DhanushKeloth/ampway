@@ -86,40 +86,31 @@ export default function Footer3() {
               <div className="flex items-center justify-start  gap-2">
                 <MapPin className="text-gray-500 w-5 h-5 md:w-5 md:h-5" />
                 <span className="md:text-md text-sm text-neutral-400 md:w-3/4 w-48">
-                  Accelerated at THub, Knowledge City, Cyberabad, Hyderabad, Telangana, 500081
+                  Accelerated at THub, Knowledge City, Cyberabad, Hyderabad,
+                  Telangana, 500081
                 </span>
               </div>
-              <div className="flex items-center justify-start md:justify-normal gap-2">
+              <div className="flex items-center justify-start md:justify-normal gap-2" id="phonenumber">
                 <Phone className="text-gray-500 w-5 h-5 md:w-5 md:h-5" />
                 <span className="md:text-md text-sm text-neutral-400 md:w-3/4 w-48">
-                  +91 9876543210
+                  +91-9908794730
                 </span>
               </div>
             </div>
 
             <div className="w-full mt-2 flex flex-col items-start md:items-start justify-start md:justify-center">
-              <h3 className=" text-md mb-4 text-neutral-500">
-                Connect with us
+              <h3 className="text-md mb-4 text-neutral-500">
+                Connect with us:
               </h3>
-              <div className="flex space-x-4">
+
+              <div className="flex space-x-4 items-center">
                 <a
-                  href="#"
-                  className="p-2 bg-gray-800 rounded-full hover:bg-gray-700 transition"
-                >
-                  <FaInstagram size={20} />
-                </a>
-                <a
-                  href="#"
-                  className="p-2 bg-gray-800 rounded-full hover:bg-gray-700 transition"
-                >
-                  <FaLinkedin size={20} />
-                </a>
-                <a
-                  href="#"
-                  className="p-2 bg-gray-800 rounded-full hover:bg-gray-700 transition"
+                  href="mailto:contact@ampway.in"
+                  className="p-2 bg-gray-800 rounded-full hover:bg-gray-700 transition flex items-center justify-center"
                 >
                   <MdOutlineEmail size={20} />
                 </a>
+                <span className="text-sm text-white">contact@ampway.in</span>
               </div>
             </div>
           </div>
@@ -135,7 +126,6 @@ export default function Footer3() {
               Designed by
               <p className="text-[#20AC65] color-blink-hover">Dhanush</p>&
               <p className="text-[#20AC65] color-blink-hover">Adhikowshik</p>
-           
             </p>
           </div>
         </div>
