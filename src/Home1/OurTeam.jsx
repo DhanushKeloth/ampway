@@ -1,8 +1,9 @@
 import React from "react";
-import { BsInstagram, BsLinkedin, BsTwitter } from "react-icons/bs";
+import { BsLinkedin } from "react-icons/bs";
 import adityad from "../assets/Aditya_D.png";
 import adityal from "../assets/Aditya_L.png";
 import { SlPeople } from "react-icons/sl";
+
 export default function OurTeam() {
   const teamMembers = [
     {
@@ -11,7 +12,7 @@ export default function OurTeam() {
       description:
         " Our CEO & Co-Founder brings over 15 years of global experience driving sustainable transitions.",
       image: adityad,
-      
+      linkedin: "https://www.linkedin.com/in/adithyadahagama/", // ✅ Add LinkedIn link here
     },
     {
       name: "Aditya Lanka",
@@ -19,7 +20,7 @@ export default function OurTeam() {
       description:
         " Our CTO & Co-Founder brings over 15 years of technical and business experience in global automotive markets.",
       image: adityal,
-      
+      linkedin: "https://www.linkedin.com/in/aditya-lanka/", // ✅ Already present
     },
   ];
 
@@ -77,10 +78,16 @@ export default function OurTeam() {
 
                   {/* Social Links */}
                   <div className="flex gap-3 mt-4 md:mt-0">
-                    
-                    <a href="#" className="text-gray-600 hover:text-[#1a7b56]">
-                      <BsLinkedin size={20} />
-                    </a>
+                    {member.linkedin && (
+                      <a
+                        href={member.linkedin}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-gray-600 hover:text-[#1a7b56]"
+                      >
+                        <BsLinkedin size={20} />
+                      </a>
+                    )}
                   </div>
                 </div>
               </div>
