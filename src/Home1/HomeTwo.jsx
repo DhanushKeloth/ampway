@@ -171,8 +171,8 @@ const HomeTwo = () => {
               </a>
             </div>
           </div>
-          <div className="absolute  w-[75%]  md:-mt-16 mt-72 top-80 left-64">
-            <img src={homepage}  alt="homepage" />
+          <div className="absolute  md:w-[75%] w-full md:-mt-16 mt-72 md:top-80 md:left-64">
+            <img src={homepage} width={"200%"}  alt="homepage" />
           </div>
         </div>
       </div>
