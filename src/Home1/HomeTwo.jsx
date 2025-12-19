@@ -38,7 +38,8 @@ import OurTeam from "./OurTeam";
 import logo from "../assets/logo.svg";
 import thunder from "../assets/voltage.svg";
 import electricnobg from "../assets/electricgrid_nobg.svg";
-import homepage from "../assets/electricgrid2.svg";
+// import homepage from "../assets/electricgrid2.svg";
+import homepage from "../../ampway_home_page_opaque.svg";
 const HomeTwo = () => {
   const [showNavbar, setShowNavbar] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
@@ -170,8 +171,8 @@ const HomeTwo = () => {
               </a>
             </div>
           </div>
-          <div className="absolute w-full  md:-mt-16 mt-72">
-            <img src={homepage} alt="homepage" />
+          <div className="absolute  w-[75%]  md:-mt-16 mt-72 top-80 left-64">
+            <img src={homepage}  alt="homepage" />
           </div>
         </div>
       </div>
